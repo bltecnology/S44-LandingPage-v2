@@ -52,6 +52,7 @@
     font-size: 1.125rem;
     line-height: 1.6;
   }
+
   
   .cargo-list li {
     display: flex;
@@ -62,6 +63,12 @@
     padding-right: 1rem;
   }
   
+.container-sub-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
   .cargo-list li svg {
     color: #facc15;
     font-size: 1.5rem;
