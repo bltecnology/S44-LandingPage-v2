@@ -176,7 +176,9 @@ export function Header() {
               Entrar
               <LogIn size={16} style={{ marginLeft: "0.25rem" }} />
             </button>
-            <button className="btn primary">Cadastre-se ↗</button>
+            <button className="btn primary">
+              Cadastre-se ↗
+              </button>
           </div>
         </div>
       </header>
