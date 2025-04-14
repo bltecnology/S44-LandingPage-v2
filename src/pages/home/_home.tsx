@@ -2,11 +2,11 @@ import { FirstSection } from "./first-section";
 import { SecondSection } from "./second-section";
 import { ThirdSection } from "./third-section";
 import { FourthSection } from "./fourth-section";
-import { FiveSection } from "./five-section";
-import { SixSection } from "./six-section";
-import { SevenSection } from "./seven-section";
-import { EightSection } from "./eight-section";
-import { NineSection } from "./nine-section";
+import { FifthSection } from "./fifth-section";
+import { SixthSection } from "./sixth-section";
+import { SeventhSection } from "./seventh-section";
+import { EighthSection } from "./eighth-section";
+import { NinthSection } from "./ninth-section";
 import { ContactSection } from "./contact-section";
 
 
@@ -17,11 +17,11 @@ export function Home() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
-      <FiveSection />
-      <SixSection />
-      <SevenSection />
-      <EightSection />
-      <NineSection />
+      <FifthSection />
+      <SixthSection />
+      <SeventhSection />
+      <EighthSection />
+      <NinthSection />
       <ContactSection />
     </div>
   );

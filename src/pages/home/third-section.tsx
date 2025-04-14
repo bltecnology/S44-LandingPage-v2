@@ -1,4 +1,4 @@
-import truckImage from "../../assets/third-section-caminhao-amarelo.png";
+import truckImage from "../../assets/third-section-caminhao-corrigido.png";
 import bannerImage from "../../assets/third-section-banner.png";
 import "../../styles/third-section.css";
 import { Check } from "lucide-react";

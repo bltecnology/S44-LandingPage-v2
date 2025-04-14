@@ -18,7 +18,7 @@ export function FirstSection() {
           </p>
           <div className="section-button">
             <button className="btn">
-              Saiba mais
+              Saiba mais ↗
             </button >
             <button className="btn primary">
               Acesse a plantaforma
