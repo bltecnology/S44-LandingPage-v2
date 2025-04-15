@@ -8,7 +8,6 @@ export function ContactSection() {
       className="contact-section"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="contact-wrapper">
         <div className="contact-form-box">
           <div className="contact-header">Interessado na plataforma? Contate-nos!</div>
           <form className="contact-form">
@@ -24,7 +23,7 @@ export function ContactSection() {
         <div className="contact-image">
           <img src={truck} alt="Caminhão" />
         </div>
-      </div>
+      
     </section>
   );
 }

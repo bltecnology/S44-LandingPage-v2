@@ -68,7 +68,6 @@ import {
   SheetContent,
   SheetTrigger,
 } from "../components/ui/sheet";
-// import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 
 import "../styles/header.css";
 
@@ -81,13 +80,12 @@ export function Header() {
             <Sheet>
               <SheetTrigger className="mobile-trigger" asChild>
                 <button>
-                  <AlignLeft className="icon" />
+                  <AlignLeft className="icon text-white" />
                 </button>
               </SheetTrigger>
-              <SheetContent className="sheet-content" side={"left"}>
+              <SheetContent className="sheet-content" side="left">
                 <nav className="mobile-nav">
-                  <div className="user-info">
-                  </div>
+                  <div className="user-info"></div>
                   <div className="divider">
                     {[
                       { icon: TrendingUpIcon, label: "Soluções" },
@@ -98,10 +96,10 @@ export function Header() {
                     ].map(({ icon: Icon, label }) => (
                       <a key={label} href="/" className="nav-link">
                         <div className="nav-icon-label">
-                          <Icon className="icon-small" />
-                          <span className="label">{label}</span>
+                          <Icon className="icon-small text-white" />
+                          <span className="label text-white">{label}</span>
                         </div>
-                        <ChevronRight strokeWidth={1.5} />
+                        <ChevronRight strokeWidth={1.5} className="text-white" />
                       </a>
                     ))}
                   </div>
@@ -109,7 +107,7 @@ export function Header() {
               </SheetContent>
             </Sheet>
 
-            <Link to={"/error"}>
+            <Link to="/error">
               <div className="logo">
                 <img src={logo} alt="Logo S44" />
               </div>
@@ -129,11 +127,11 @@ export function Header() {
                     { icon: RefreshCcw, title: "Serviço de logística", desc: "Soluções para devolução" },
                     { icon: PackageOpen, title: "Armazenagem", desc: "Espaços seguros para estocagem" },
                   ].map(({ icon: Icon, title, desc }) => (
-                    <Link key={title} to="/error" className="dropdown-item">
-                      <Icon size={24} />
+                    <Link key={title} to="/error" className="dropdown-item group">
+                      <Icon size={24} className="text-white group-hover:text-white" />
                       <div>
-                        <h4 className="item-title">{title}</h4>
-                        <p className="item-desc">{desc}</p>
+                        <h4 className="item-title text-white">{title}</h4>
+                        <p className="item-desc text-zinc-400">{desc}</p>
                       </div>
                     </Link>
                   ))}
@@ -152,33 +150,34 @@ export function Header() {
                     { icon: LucideMessageCircleQuestion, title: "FAQs", desc: "Perguntas frequentes" },
                     { icon: BookText, title: "Guias de Transporte", desc: "Manuais detalhados" },
                   ].map(({ icon: Icon, title, desc }) => (
-                    <Link key={title} to="/error" className="dropdown-item">
-                      <Icon size={24} />
+                    <Link key={title} to="/error" className="dropdown-item group">
+                      <Icon size={24} className="text-white group-hover:text-white" />
                       <div>
-                        <h4 className="item-title">{title}</h4>
-                        <p className="item-desc">{desc}</p>
+                        <h4 className="item-title text-white">{title}</h4>
+                        <p className="item-desc text-zinc-400">{desc}</p>
                       </div>
                     </Link>
                   ))}
                 </HoverCardContent>
               </HoverCard>
 
-              <Link to={"/error"} className="nav-link-simple">
+              <Link to="/error" className="nav-link-simple">
                 <span className="nav-text">Quem somos</span>
               </Link>
-              <Link to={"/error"} className="nav-link-simple">
+              <Link to="/error" className="nav-link-simple">
                 <span className="nav-text">Contato</span>
               </Link>
             </nav>
           </div>
+
           <div className="header-right">
             <button className="btn disabled">
               Entrar
-              <LogIn size={16} style={{ marginLeft: "0.25rem" }} />
+              <LogIn size={16} style={{ marginLeft: "0.25rem" }} className="text-white" />
             </button>
             <button className="btn primary">
               Cadastre-se ↗
-              </button>
+            </button>
           </div>
         </div>
       </header>
