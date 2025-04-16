@@ -39,7 +39,7 @@ export function Footer() {
             <ul>
               <li>
                 <FiMail /> 
-                <a href="mailto:TransportadoraS44@gmail.com">TransportadoraS44@gmail.com</a>
+                <Link to="mailto:TransportadoraS44@gmail.com">TransportadoraS44@gmail.com </Link>
               </li>
               <li><FiPhone /> 55 (11) 987 654 321</li>
               <li>
