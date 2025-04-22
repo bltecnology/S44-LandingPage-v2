@@ -1,17 +1,9 @@
-@keyframes cardAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.95); /* Começa com leve deslocamento e redução */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1); /* Chega na posição normal e tamanho normal */
-  }
-}
-
 .second-section {
     padding: 4rem 2rem;
     background-color: #f5f5f5;
+    margin-top: -5rem; /* ou ajuste o valor para subir mais/menos */
+    position: relative;
+    overflow: hidden;
   }
   
   .section-title {
@@ -95,7 +87,8 @@
     line-height: 1.6;
     color: #555;
   }
-  
+
+  /* RESPONSIVIDADE PARA AS TELAS  */
   @media (max-width: 768px) {
     .card-grid {
       grid-template-columns: 1fr;

@@ -1,10 +1,7 @@
-
-
 section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem 2rem;
     position: relative;
     overflow: visible;
 }
@@ -14,8 +11,8 @@ section {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    margin-top: 4rem;
-    height: 400px;
+    margin-top: -6rem;
+    height: 700px;
     justify-content: space-between;
     gap: 2rem;
     position: relative;
@@ -87,31 +84,87 @@ section {
 }
 
 
-.btn.primary {
-    background-color: transparent !important; 
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    display: flex;
+.btn-outline-white {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.5rem;
-    transition: all 0.2s ease;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0.75rem 2rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 0.5rem;
+    min-width: 180px;
+
 }
 
-.btn.primary:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: #fff;
+.btn-outline-white:hover {
+    background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.05);
 }
 
+
 .section-container img {
-    transform: scale(1.1);
+    transform: scale(1.6);
     height: auto;
     object-fit: contain;
-    margin-right: -20rem;
+    margin-right: -4rem;
     margin-top: -2rem;
-    margin-bottom: -3rem;
+    margin-bottom: -3.5rem;
     z-index: 2;
     position: relative;
 }
+
+
+/* RESPONSIVIDADE PARA AS TELAS  */
+@media (max-width: 1023px) {
+    .section-container {
+      padding: 1.5rem 1rem;
+      gap: 1.5rem;
+      min-height: 100vh;
+      justify-content: center;
+      margin-left: 3rem;
+      margin-top: -10rem;
+    }
+  
+    .section-container h1 {
+      font-size: 1.4rem;
+      line-height: 1.2;
+    }
+  
+    .section-container p {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+  
+    .section-button {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .section-button .btn,
+    .section-button .btn-outline-white {
+      font-size: 0.75rem;
+      padding: 0.5rem 1rem;
+      width: 90%;
+      gap: 0.5rem;
+    }
+  
+    .section-container img {
+      display: none !important;
+    }
+  
+    .section-container > div:first-child {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  

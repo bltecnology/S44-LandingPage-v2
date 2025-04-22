@@ -8,15 +8,16 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <div className="footer-brand">
-          <img src={logo} alt="Logo S44" className="logo" />
-          <p>
-            O objetivo da empresa S44 é fornecer soluções eficientes e confiáveis
-            de transporte e logística, atendendo às necessidades dos clientes com
-            qualidade e inovação.
-          </p>
+        <div className="footer-info">
+          <div className="footer-logo">
+            <img src={logo} alt="Logo S44" />
+          </div>
+          <div className="footer-description">
+            <p>
+            O objetivo da empresa S44 é fornecer soluções eficientes e confiáveis de transporte e logística, atendendo às necessidades dos clientes com qualidade e inovação.
+            </p>
+          </div>
         </div>
-
         {/* Colunas de informações */}
         <div className="footer-columns">
           <div className="footer-col">
@@ -24,7 +25,7 @@ export function Footer() {
               Dúvidas Frequentes <FiSearch />
             </h4>
             <ul>
-              <li>Como posso acompanhar o status das minhas mercadorias?</li>
+              <li>Como faço para acompanhar as minhas mercadorias?</li>
               <li>Como solicito um orçamento para transporte?</li>
               <li>A S44 oferece suporte para problemas com entregas?</li>
               <li>Onde posso encontrar informações sobre a S44 e seus serviços?</li>
@@ -38,10 +39,10 @@ export function Footer() {
             </h4>
             <ul>
               <li>
-                <FiMail /> 
+                <FiMail />
                 <Link to="mailto:TransportadoraS44@gmail.com">TransportadoraS44@gmail.com </Link>
               </li>
-              <li><FiPhone /> 55 (11) 987 654 321</li>
+              <li><FiPhone /> 55 (19) 99352-3536</li>
               <li>
                 <Link to="https://www.instagram.com/S44_Logistica" target="_blank" rel="noopener noreferrer">
                   <FaInstagram /> S44_Logistica

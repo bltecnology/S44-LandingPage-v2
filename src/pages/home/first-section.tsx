@@ -1,5 +1,5 @@
 import banner from "../../assets/first-section-banner.png";
-import caminhao from "../../assets/first-section-caminhao.png";
+import caminhao from "../../assets/caminhão fundo amarelo banner.png";
 import { Truck } from "lucide-react";
 import "../../styles/first-section.css";
 
@@ -14,13 +14,13 @@ export function FirstSection() {
           <h1>
             Logística e Transporte <span className="highlight">S44</span>
           </h1>
-          <p>A S44 é uma empresa especializada no transporte de cargas, oferecendo soluções logísticas seguras e eficientes, atendendo tanto ao mercado interno quanto ao internacional.
+          <p>A S44 é uma empresa especializada no transporte de cargas, oferecendo soluções logísticas seguras e eficientes para atender com excelência às demandas do mercado nacional.
           </p>
           <div className="section-button">
             <button className="btn">
               Saiba mais ↗
             </button >
-            <button className="btn primary">
+            <button className="btn-outline-white">
               Acesse a plantaforma
               <Truck size={16} style={{ marginLeft: "0.5rem" }}></Truck>
             </button>

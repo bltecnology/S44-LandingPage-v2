@@ -1,39 +1,3 @@
-// // src/components/header.tsx
-// import { Link } from "react-router-dom";
-// import { FC } from "react";
-// import logo from "../assets/logo-s44.png";
-// import "../styles/header.css";
-
-// export const Header: FC = () => {
-//   return (
-//     <header className="s44-header">
-//       <div className="container">
-//         <div className="left">
-//           <div className="logo">
-//             <img src={logo} alt="Logo S44" />
-//           </div>
-//           <nav className="nav-links">
-//             <Link to= "#solucoes">Soluções</Link>
-//             <Link to= "#conteudo">Conteúdo</Link>
-//             <Link to= "#quem-somos">Quem somos</Link>
-//             <Link to= "#contato">Contato</Link>
-//           </nav>
-//         </div>
-
-//         <div className="auth-buttons">
-//           <button className="btn disabled" disabled>
-
-//             Entrar
-//           </button>
-//           <button className="btn primary">
-//             Cadastre-se ↗
-//           </button>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// };
-
 import {
   AlignLeft,
   BookCopy,
@@ -63,11 +27,12 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "../components/ui/hover-card";
+
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from "../components/ui/sheet";
+} from "@/components/ui/sheet";
 
 import "../styles/header.css";
 
@@ -84,30 +49,29 @@ export function Header() {
                 </button>
               </SheetTrigger>
               <SheetContent className="sheet-content" side="left">
+                <div className="sheet-header">
+                  <img src={logo} alt="Logo S44" className="logo-mobile" />
+                  <button className="btn btn-mobile">
+                    Entrar
+                    <LogIn size={16} style={{ marginLeft: "0.25rem" }} className="text-white" />
+                  </button>
+                  <button className="btn primary btn-mobile">Cadastre-se ↗</button>
+                </div>
                 <nav className="mobile-nav">
-                  <div className="user-info"></div>
-                  <div className="divider">
-                    {[
-                      { icon: TrendingUpIcon, label: "Soluções" },
-                      { icon: BookCopy, label: "Conteúdo" },
-                      { icon: UsersRound, label: "Quem somos" },
-                      { icon: Phone, label: "Contato" },
-                      { icon: UserCircle, label: "Ver perfil" },
-                    ].map(({ icon: Icon, label }) => (
-                      <a key={label} href="/" className="nav-link">
-                        <div className="nav-icon-label">
-                          <Icon className="icon-small text-white" />
-                          <span className="label text-white">{label}</span>
-                        </div>
-                        <ChevronRight strokeWidth={1.5} className="text-white" />
-                      </a>
-                    ))}
-                  </div>
+                  {[{ icon: TrendingUpIcon, label: "Soluções" }, { icon: BookCopy, label: "Conteúdo" }, { icon: UsersRound, label: "Quem somos" }, { icon: Phone, label: "Contato" }, { icon: UserCircle, label: "Ver perfil" }].map(({ icon: Icon, label }) => (
+                    <a key={label} href="/" className="nav-link">
+                      <div className="nav-icon-label">
+                        <Icon className="icon-small text-white" />
+                        <span className="label text-white">{label}</span>
+                      </div>
+                      <ChevronRight strokeWidth={1.5} className="text-white" />
+                    </a>
+                  ))}
                 </nav>
               </SheetContent>
             </Sheet>
 
-            <Link to="/error">
+            <Link to="/error" className="logo-desktop">
               <div className="logo">
                 <img src={logo} alt="Logo S44" />
               </div>
@@ -120,13 +84,7 @@ export function Header() {
                   <ChevronDown size={16} className="dropdown-icon" />
                 </HoverCardTrigger>
                 <HoverCardContent className="dropdown-content">
-                  {[
-                    { icon: MapPin, title: "Rastreamento", desc: "Localização da carga" },
-                    { icon: Truck, title: "Gestão de frotas", desc: "Monitoramento de veículos" },
-                    { icon: Shield, title: "Seguro", desc: "Proteção contra perdas" },
-                    { icon: RefreshCcw, title: "Serviço de logística", desc: "Soluções para devolução" },
-                    { icon: PackageOpen, title: "Armazenagem", desc: "Espaços seguros para estocagem" },
-                  ].map(({ icon: Icon, title, desc }) => (
+                  {[{ icon: MapPin, title: "Rastreamento", desc: "Localização da carga" }, { icon: Truck, title: "Gestão de frotas", desc: "Monitoramento de veículos" }, { icon: Shield, title: "Seguro", desc: "Proteção contra perdas" }, { icon: RefreshCcw, title: "Serviço de logística", desc: "Soluções para devolução" }, { icon: PackageOpen, title: "Armazenagem", desc: "Espaços seguros para estocagem" }].map(({ icon: Icon, title, desc }) => (
                     <Link key={title} to="/error" className="dropdown-item group">
                       <Icon size={24} className="text-white group-hover:text-white" />
                       <div>
@@ -144,12 +102,7 @@ export function Header() {
                   <ChevronDown size={16} className="dropdown-icon" />
                 </HoverCardTrigger>
                 <HoverCardContent className="dropdown-content">
-                  {[
-                    { icon: Laptop, title: "Blog Educativo", desc: "As melhores práticas" },
-                    { icon: Newspaper, title: "Notícias do Setor", desc: "Novas atualizações" },
-                    { icon: LucideMessageCircleQuestion, title: "FAQs", desc: "Perguntas frequentes" },
-                    { icon: BookText, title: "Guias de Transporte", desc: "Manuais detalhados" },
-                  ].map(({ icon: Icon, title, desc }) => (
+                  {[{ icon: Laptop, title: "Blog Educativo", desc: "As melhores práticas" }, { icon: Newspaper, title: "Notícias do Setor", desc: "Novas atualizações" }, { icon: LucideMessageCircleQuestion, title: "FAQs", desc: "Perguntas frequentes" }, { icon: BookText, title: "Guias de Transporte", desc: "Manuais detalhados" }].map(({ icon: Icon, title, desc }) => (
                     <Link key={title} to="/error" className="dropdown-item group">
                       <Icon size={24} className="text-white group-hover:text-white" />
                       <div>
@@ -171,11 +124,11 @@ export function Header() {
           </div>
 
           <div className="header-right">
-            <button className="btn disabled">
+            <button className="btn disabled desktop-only">
               Entrar
-              <LogIn size={16} style={{ marginLeft: "0.25rem" }} className="text-white" />
+              <LogIn size={16} style={{ marginLeft: "0.25rem" }} className="text-[#3D3D3D]" />
             </button>
-            <button className="btn primary">
+            <button className="btn primary desktop-only">
               Cadastre-se ↗
             </button>
           </div>

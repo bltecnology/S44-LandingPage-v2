@@ -87,16 +87,58 @@
     transform: scale(1.05);
   }
   
+
+  /* RESPONSIVIDADE PARA AS TELAS  */
   @media (max-width: 768px) {
     .sixth-section-container {
       flex-direction: column;
+      text-align: center;
+    }
+  
+    .sixth-truck-image {
+      display: none;
+    }
+  
+    .sixth-text-content {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
     }
   
     .sixth-highlight-box {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      max-width: 100%;
+      margin-top: 1rem;
     }
   
     .sixth-btn {
       font-size: 0.9rem;
+      padding: 0.65rem 1rem;
+      width: 100%;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
+  
+  @media (max-width: 425px) {
+    .sixth-highlight-box {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .sixth-text-content {
+      font-size: 0.85rem;
+      padding: 1rem;
+    }
+  
+    .sixth-btn {
+      font-size: 0.85rem;
+      width: 100%;
+      padding: 0.6rem 1rem;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

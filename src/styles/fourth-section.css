@@ -1,96 +1,137 @@
 .fourth-section {
-    padding: 4rem 2rem;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-  
-  .fourth-section h2 {
-    color: #3b3b3b;
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.fourth-section h2 {
+  color: #3b3b3b;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.fourth-section-container {
+  display: flex;
+  background-color: #3F3E40;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1600px;
+  margin: 2rem auto 0 auto;
+  text-align: left;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.fourth-truck-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fourth-text-content {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.fourth-highlight-box {
+  display: inline-block;
+  padding: 0.25rem;
+  border: 3px solid #facc15;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color:transparent;
+  color: #fff;
+  margin-bottom: 3rem;
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 30%;
+}
+
+.fourth-description {
+  opacity: 0.7;
+}
+
+.fourth-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin-top: 3rem;
+  text-align: left; 
+  max-width: max-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.fourth-btn:hover {
+  background-color: #facc15; 
+  color: #000; 
+  transform: scale(1.05);
+}
+
+
+/* RESPONSIVIDADE PARA AS TELAS  */
+@media (max-width: 768px) {
   .fourth-section-container {
-    display: flex;
-    background-color: #3F3E40;
-    border-radius: 8px;
-    overflow: hidden;
-    max-width: 1600px;
-    margin: 2rem auto 0 auto;
-    text-align: left;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
-  
-  .fourth-truck-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .fourth-text-content {
-    flex: 2;
-    padding: 2rem;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: left;
-  }
-  
-  .fourth-highlight-box {
-    display: inline-block;
-    padding: 0.25rem;
-    border: 3px solid #facc15;
-    border-radius: 5px;
-    font-weight: 700;
-    background-color:transparent;
-    color: #fff;
-    margin-bottom: 3rem;
-    margin-top: -2rem;
-    font-size: 1.5rem;
     text-align: center;
-    max-width: 30%;
   }
 
-  .fourth-description {
-    opacity: 0.7;
+  .fourth-truck-image {
+    display: none;
   }
-  
+
+  .fourth-text-content {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .fourth-highlight-box {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
   .fourth-btn {
-    display: inline-flex;
-    align-items: center;
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+    width: 100%;
     justify-content: center;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 6px;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    margin-top: 3rem;
-    text-align: left; 
-    max-width: max-content;
-    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .fourth-btn:hover {
-    background-color: #facc15; 
-    color: #000; 
-    transform: scale(1.05);
+}
+
+@media (max-width: 425px) {
+  .fourth-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .fourth-section-container {
-      flex-direction: column;
-    }
-  
-    .fourth-highlight-box {
-      font-size: 1.2rem;
-    }
-  
-    .fourth-btn {
-      font-size: 0.9rem;
-    }
+
+  .fourth-text-content {
+    font-size: 0.85rem;
+    padding: 1rem;
   }
+
+  .fourth-btn {
+    font-size: 0.85rem;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
