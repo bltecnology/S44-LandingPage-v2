@@ -21,7 +21,6 @@ import {
 
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-s44.png";
-import { useEffect, useState } from "react";
 
 import {
   HoverCard,
