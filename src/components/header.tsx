@@ -21,6 +21,7 @@ import {
 
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-s44.png";
+import { useEffect, useState } from "react";
 
 import {
   HoverCard,
@@ -37,6 +38,7 @@ import {
 import "../styles/header.css";
 
 export function Header() {
+  
   return (
     <div className="header-wrapper">
       <header className="header">

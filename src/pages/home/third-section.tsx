@@ -17,8 +17,7 @@ export function ThirdSection() {
               <strong>Cargas Secas:</strong>
               <div className="container-sub-list">
               <span>
-                Produtos não perecíveis como materiais de construção e
-                eletrodomésticos.
+              Produtos não perecíveis como produtos de limpeza e produtos alimentícios.
               </span>
               <Check size={28} />
               </div>

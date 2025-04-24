@@ -36,6 +36,8 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  position: relative; 
+  z-index: 2;
 }
 
 .fifth-text-content {
@@ -93,6 +95,18 @@
   transform: scale(1.05);
 }
 
+.fifth-triangle-container {
+  position: absolute;
+  top: 60px;
+  right: -1%;
+  z-index: 0;
+}
+
+.fifth-triangle-image {
+  width: 300px;
+  height: auto;
+  transform: scaleX(-1); 
+}
 
 /* RESPONSIVIDADE PARA AS TELAS  */
 @media (max-width: 768px) {

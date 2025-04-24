@@ -1,5 +1,6 @@
 import "../../styles/fourth-section.css";
 import caminhao from "../../assets/fourth-section-caminhao-estrada.png";
+import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
 import { Link } from "react-router-dom";
 
 export function FourthSection() {
@@ -30,6 +31,10 @@ export function FourthSection() {
           </Link>
         </div>
       </div>
+
+      <div className="fourth-triangle-container">
+          <img src={trianguloAmarelo} alt="Triângulo Amarelo" className="fourth-triangle-image" />
+        </div>
     </section>
   );
 }

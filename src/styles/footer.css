@@ -1,7 +1,7 @@
 .footer {
     background-color: #111;
     padding: 10px 10%;
-    color: #fff;
+    color: #6A696B;
     font-family: Arial, sans-serif;
     margin-top: 12rem;
 
@@ -65,7 +65,6 @@
 
 .footer-col:first-child {
     margin-left: -2rem;
-    /* Ajusta para mover a coluna para a esquerda */
 }
 
 .footer-col:nth-child(2),
@@ -106,7 +105,7 @@
     display: flex;
     align-items: center;
     gap: 0.2rem;
-    color: white;
+    color: #6A696B;
 }
 
 
@@ -151,14 +150,14 @@
     .footer {
         background-color: #111;
         padding: 2rem 1rem;
-        color: #fff;
+        color: #6A696B;
         font-family: Arial, sans-serif;
         margin-top: 12rem;
         margin-top: 3rem
     }
 
     .footer a {
-        color: white;
+        color: #6A696B;
         text-decoration: none;
     }
 
@@ -268,7 +267,7 @@
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
-        color: white;
+        color: #6A696B;
         font-size: 0.75rem;
     }
 
@@ -311,14 +310,14 @@
     .footer {
         background-color: #111;
         padding: 2rem 1rem;
-        color: #fff;
+        color: #6A696B;
         font-family: Arial, sans-serif;
         margin-top: 12rem;
         margin-top: 3rem
     }
 
     .footer a {
-        color: white;
+        color: #6A696B;
         text-decoration: none;
     }
 
@@ -428,7 +427,7 @@
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
-        color: white;
+        color: #6A696B;
         font-size: 0.75rem;
     }
 

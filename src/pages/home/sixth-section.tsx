@@ -1,5 +1,6 @@
 import "../../styles/sixth-section.css";
 import coletas_exportacao from "../../assets/sixth-section-image.png";
+import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
 import { Link } from "react-router-dom";
 
 export function SixthSection() {
@@ -21,6 +22,10 @@ export function SixthSection() {
                         Solicite nossos serviços ↗
                     </Link>
                 </div>
+            </div>
+
+            <div className="sixth-triangle-container">
+                <img src={trianguloAmarelo} alt="Triângulo Amarelo" className="sixth-triangle-image" />
             </div>
         </section>
     );

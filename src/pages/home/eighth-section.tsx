@@ -1,5 +1,6 @@
 import "../../styles/eighth-section.css";
 import coletas_exportacao from "../../assets/eighth-section-caminhao.png";
+import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
 import { Link } from "react-router-dom";
 
 export function EighthSection() {
@@ -23,6 +24,10 @@ export function EighthSection() {
                         Solicite nossos serviços ↗
                     </Link>
                 </div>
+            </div>
+
+            <div className="eight-triangle-container">
+                <img src={trianguloAmarelo} alt="Triângulo Amarelo" className="eight-triangle-image" />
             </div>
         </section>
     );

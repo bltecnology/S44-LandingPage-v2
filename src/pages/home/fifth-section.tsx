@@ -1,5 +1,6 @@
 import "../../styles/fifth-section.css";
 import caminhao from "../../assets/fifth-section-caminhao.png";
+import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
 import { Link } from "react-router-dom";
 
 export function FifthSection() {
@@ -22,6 +23,10 @@ export function FifthSection() {
                         Solicite nossos serviços ↗
                     </Link>
                 </div>
+            </div>
+
+            <div className="fifth-triangle-container">
+                <img src={trianguloAmarelo} alt="Triângulo Amarelo" className="fifth-triangle-image" />
             </div>
         </section>
     );

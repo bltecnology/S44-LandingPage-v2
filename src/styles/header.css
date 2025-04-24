@@ -24,14 +24,18 @@
 .header {
   width: 100%;
   z-index: 100;
+  background-color: #69676756;
+  padding: 2px 1%;
+  box-shadow: none; /* Sem sombra inicialmente */
   animation: fadeSlideUp 2s ease-out;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* .header-transparent {
-  background-color: transparent !important;
-  box-shadow: none !important;
-} */
+
+.header-transparent {
+  background-color: transparent;
+  box-shadow: none;
+}
 
 .header-solid {
   background-color: #2e2e2e !important;
@@ -278,6 +282,7 @@
 
 /* RESPONSIVIDADE PARA AS TELAS  */
 @media (max-width: 1023px) {
+  
   .logo-desktop,
   .desktop-nav,
   .desktop-only {

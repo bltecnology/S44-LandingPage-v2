@@ -1,7 +1,7 @@
 import "../styles/footer.css";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiMail, FiPhone, FiSearch, FiInfo, FiLogIn } from "react-icons/fi";
-import { Link } from "react-router-dom"; // Importando o Link do react-router-dom
+import { Link } from "react-router-dom"; 
 import logo from "../assets/logo-s44.png";
 
 export function Footer() {

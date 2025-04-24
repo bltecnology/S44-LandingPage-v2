@@ -30,6 +30,8 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    position: relative; 
+    z-index: 2;
   }
   
   .seventh-text-content {
@@ -85,6 +87,19 @@
     background-color: #facc15; 
     color: #000; 
     transform: scale(1.05);
+  }
+
+  .seventh-triangle-container {
+    position: absolute;
+    top: 60px;
+    right: -1%;
+    z-index: 0;
+  }
+  
+  .seventh-triangle-image {
+    width: 300px;
+    height: auto;
+    transform: scaleX(-1); 
   }
   
 

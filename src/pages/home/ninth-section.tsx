@@ -1,5 +1,6 @@
 import "../../styles/ninth-section.css";
 import coletas_exportacao from "../../assets/ninth-section-image.png";
+import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
 import { Link } from "react-router-dom";
 
 export function NinthSection() {
@@ -23,6 +24,10 @@ export function NinthSection() {
                         Solicite nossos serviços ↗
                     </Link>
                 </div>
+            </div>
+
+            <div className="ninth-triangle-container">
+                <img src={trianguloAmarelo} alt="Triângulo Amarelo" className="ninth-triangle-image" />
             </div>
         </section>
     );

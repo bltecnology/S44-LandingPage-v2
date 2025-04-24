@@ -22,7 +22,7 @@ export function FirstSection() {
             </button >
             <button className="btn-outline-white">
               Acesse a plantaforma
-              <Truck size={16} style={{ marginLeft: "0.5rem" }}></Truck>
+              <Truck size={20} style={{ marginLeft: "0.125rem" }}></Truck>
             </button>
           </div>
         </div>

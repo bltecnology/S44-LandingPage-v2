@@ -30,6 +30,8 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    position: relative; 
+    z-index: 2;
   }
   
   .eighth-text-content {
@@ -86,6 +88,18 @@
     background-color: #facc15; 
     color: #000; 
     transform: scale(1.05);
+  }
+
+  .eight-triangle-container {
+    position: absolute;
+    top: 50px;
+    left: -1px;
+    z-index: 0;
+  }
+  
+  .eight-triangle-image {
+    width: 300px;
+    height: auto;
   }
 
   /* RESPONSIVIDADE PARA AS TELAS  */
