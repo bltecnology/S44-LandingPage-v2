@@ -13,7 +13,7 @@ export function SecondSection() {
           <div className="icon-circle">
             <Handshake size={28} strokeWidth={2} />
           </div>
-          <h3>Serviço de Agramento</h3>
+          <h3>Serviço de Agregamento</h3>
           <p>
           Caminhoneiros autônomos com veículo próprio são integrados à frota da S44, com fretes constantes, suporte e autonomia.
           </p>
