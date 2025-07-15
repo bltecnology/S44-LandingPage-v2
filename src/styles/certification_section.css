@@ -1,0 +1,63 @@
+.certifications-section {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap; /* ← importante! impede quebra */
+  gap: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* Lados fixos */
+.textLeft,
+.textRight {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 300px; /* largura fixa */
+  flex-shrink: 0; /* impede que encolham se a imagem crescer */
+}
+
+/* Texto dos itens */
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f5b223;
+}
+
+.item p {
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+/* Bloco central com imagem */
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1; /* pega o espaço que sobrar */
+  max-width: 1000px; /* limite visual da imagem */
+}
+
+/* Imagem ajustável */
+.truckImage {
+  width: 100%;
+  max-width: 1700px; /* define o tamanho final que você quer */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}

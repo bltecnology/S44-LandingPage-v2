@@ -1,6 +1,5 @@
-import banner from "../../assets/first-section-banner.png";
+import banner from "../../assets/banner_principal.png";
 import caminhao from "../../assets/caminhão fundo amarelo banner.png";
-import { Truck } from "lucide-react";
 import "../../styles/first-section.css";
 
 export function FirstSection() {
@@ -20,13 +19,9 @@ export function FirstSection() {
             <button className="btn">
               Saiba mais ↗
             </button >
-            <button className="btn-outline-white">
-              Acesse a plantaforma
-              <Truck size={20} style={{ marginLeft: "0.125rem" }}></Truck>
-            </button>
           </div>
         </div>
-        <div>
+        <div className="image-wrapper">
           <img src={caminhao} alt="Caminhão"></img>
         </div>
       </div>

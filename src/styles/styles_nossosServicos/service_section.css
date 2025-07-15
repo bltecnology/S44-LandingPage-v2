@@ -1,0 +1,66 @@
+.section-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 80px 40px;
+  height: 600px;
+  z-index: 1;
+}
+
+.section-container > div:first-child {
+  max-width: 55%;
+  color: #fff;
+}
+
+.section-container span {
+  color: #facc15;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.section-container h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.section-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.section-button {
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: #facc15;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Caminhão */
+.image-wrapper {
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
