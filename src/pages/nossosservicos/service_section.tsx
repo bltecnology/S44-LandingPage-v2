@@ -1,5 +1,5 @@
 import "../../styles/styles_nossosServicos/service_section.css";
-import truckImage from "../../assets/imagens_nossosServicos/Group_52.png"; // Caminhão à direita 
+import truckImage from "../../assets/imagens_nossosServicos/nossos_servicos.png"; // Caminhão à direita 
 import banner from "../../assets/banner_principal.png"; // Traços amarelos de fundo
 
 export function ServicesSection() {
@@ -18,7 +18,7 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="image-wrapper">
+        <div className="tucker-image-wrapper" style={{ alignSelf: "flex-start" }}>
           <img src={truckImage} alt="Caminhão" />
         </div>
       </div>

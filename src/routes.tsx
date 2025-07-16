@@ -5,6 +5,8 @@ import { MainLayout } from "./layout/main-layout";
 import { QuemSomos } from "./pages/quemsomos/_quemsomos";
 import { Servicos } from "./pages/nossosservicos/_nossosservicos";
 import { NossaFrota } from "./pages/nossafrota/_nossafrota";
+import { Contato } from "./pages/contato/_contato";
+import { ServiceBanner } from "./pages/services/service_banner";
 
 // Criando o Router com as rotas e layouts
 export const router = createBrowserRouter([
@@ -16,6 +18,8 @@ export const router = createBrowserRouter([
       { path: "/quem-somos", element: <QuemSomos /> },
       { path: "/servicos", element: <Servicos /> },
       { path: "/nossa-frota", element: <NossaFrota /> },
+      { path: "/contato", element: <Contato /> },
+      { path: "/service", element: <ServiceBanner /> },
       
     ],
   },

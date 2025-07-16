@@ -1,7 +1,7 @@
 import "../../styles/fourth-section.css";
 import caminhao from "../../assets/fourth-section-caminhao-estrada.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
-import { Link } from "react-router-dom";
+
 
 export function FourthSection() {
   return (
@@ -26,9 +26,9 @@ export function FourthSection() {
             serviço assegura que todas as exigências legais sejam cumpridas, mantendo a conformidade com as normas
             fiscais e aduaneiras, facilitando o transporte internacional e a movimentação interna de mercadorias.
           </p>
-          <Link to="#" className="fourth-btn">
-            Solicite nossos serviços ↗
-          </Link>
+          <div className="fourth-btn">
+            <a href="/service">Solicite nossos serviços ↗</a>
+          </div>
         </div>
       </div>
 

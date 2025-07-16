@@ -1,10 +1,11 @@
 .navbar-wrapper {
   width: 100%;
-  position: sticky;
+  position: fixed; /* ← muda de sticky para fixed */
   top: 0;
   z-index: 100;
-  position: relative;
+  background-color: transparent; /* ← importante se quiser ver a imagem atrás */
 }
+
 
 .navbar {
   display: flex;

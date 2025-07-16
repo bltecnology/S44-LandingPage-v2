@@ -7,8 +7,8 @@ export function Services() {
   return (
     <section className="fourth-section">
       <div className="fourth-section-header">
-        <h2 className="fourth-title">Aqui oferecemos o serviço perfeito para suas necessidades!</h2>
-        <p className="fourth-subtitle">
+        <h2 className="fourth-title" style={{ visibility: "hidden" }}>Aqui oferecemos o serviço perfeito para suas necessidades!</h2>
+        <p className="fourth-subtitle" style={{ visibility: "hidden" }}>
           Explore nossos serviços e escolha a solução que melhor atende aos seus objetivos.
         </p>
       </div>
