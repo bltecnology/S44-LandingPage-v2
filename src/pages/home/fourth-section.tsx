@@ -27,7 +27,7 @@ export function FourthSection() {
             fiscais e aduaneiras, facilitando o transporte internacional e a movimentação interna de mercadorias.
           </p>
           <div className="fourth-btn">
-            <a href="/service">Solicite nossos serviços ↗</a>
+            <a href="/service" className="btn-servicos">Solicite nossos serviços ↗</a>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import "../../styles/services/conteudo-transito.css";
 import mosaicoImage from "../../assets/1.png"; // nome que quiser dar
 
 
-export function ContTransito() {
+export function ConteudoEntregas() {
   return (
     <section className="customs-section">
       <div className="customs-text">

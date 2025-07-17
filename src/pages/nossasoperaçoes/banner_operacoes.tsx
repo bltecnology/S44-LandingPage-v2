@@ -1,10 +1,12 @@
 import "../../styles/services/service-banner.css";
 import backgroundImage from "../../assets/banners.png";
-import { ContTransito } from "./conteudo_transito";
-import { MaisCont } from "./maisCont";
-import { ContactSection } from "../home/contact-section";
 
-export function ServiceBanner() {
+import { ContactSection } from "../home/contact-section";
+import { ServicoCarga } from "./servicos_carga";
+import { TransporteContainer } from "./transporte_containers";
+
+
+export function BannerOperacoes() {
   return (
     <>
       <section
@@ -13,16 +15,16 @@ export function ServiceBanner() {
       >
         <div className="banner-overlay">
           <div className="banner-content">
-            <a href="/servicos" className="back-link">← Voltar para serviços</a>
+            <a href="/" className="back-link">← Voltar para Home</a>
             <h1>
-              <span className="highlight-yellow">Trânsito</span>{" "}
-              <span className="highlight-white">Aduaneiro</span>
+              <span className="highlight-yellow">Nossas </span>{" "}
+              <span className="highlight-white">Operações</span>
             </h1>
           </div>
         </div>
       </section>
-      <ContTransito />
-      <MaisCont />
+      <ServicoCarga/>
+      <TransporteContainer/>
       <ContactSection/>
     </>
   );

@@ -69,7 +69,6 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #facc15;
   color: #000;
   font-weight: 600;
   font-size: 1rem;
@@ -82,7 +81,6 @@ section {
 }
 
 .btn:hover {
-  background-color: #eab308;
   transform: scale(1.05);
 }
 
@@ -108,15 +106,16 @@ section {
   transform: scale(1.05);
 }
 
-/* 🔥 Ajuste principal: imagem até a borda */
+
 .image-wrapper {
-  position: absolute; /* ← muda para absoluto */
-  right: 0; /* cola no canto direito */
-  bottom: 0;
+  position: absolute; 
+  right: -220px;  
+  bottom: -50px;
   height: 100%;
   display: flex;
   align-items: flex-end;
   z-index: 2;
+  transform: scale(1.2);
 }
 
 .section-container img {

@@ -53,18 +53,22 @@
 /* Caminhão */
 .tucker-image-wrapper {
   position: absolute;
-  right: -4rem;
-  width: 45%;
+  right: -75px; 
+  width: auto;
+  height: 100%;
   display: flex;
-  justify-content: flex-end;
   align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 2;
+  transform: none; /* remove o scale */
   transform: scale(1.8);
-  top: 190px;
+  bottom: -200px;
 }
 
 .tucker-image-wrapper img {
-  width: 50%;
-  max-width: 300px;
-  height: auto;
+  height: 100%;
+  width: auto;
+  max-height: 100%;
   object-fit: contain;
 }
+

@@ -1,0 +1,130 @@
+.carga-lotacao {
+  padding: 60px 80px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* NOVO CONTAINER PARA AS DUAS COLUNAS */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.text-column {
+  flex: 1;
+  max-width: 60%;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f1f1f;
+  margin-bottom: 1.2rem;
+}
+
+.title .number {
+  color: #facc15;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+
+.benefits h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #facc15;
+  margin-bottom: 0.8rem;
+}
+
+.benefits ul {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.benefits li {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.image-column {
+  flex: 0.8;
+}
+
+.image-column img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ideal-para {
+  width: 100%;
+}
+
+.ideal-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.ideal-options {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  flex-wrap: nowrap; 
+  width: 100%;
+}
+
+.ideal-box {
+  background-color: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  padding: 18px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 1 0%;
+  max-width: none;
+  transition: border 0.3s;
+  height: 70px; /* altura igual em todas */
+}
+
+.ideal-box.destaque {
+  background-color: #facc15;
+  border: 2px solid #ccc;
+  font-weight: bold;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.icon-text svg {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.icon-text span {
+  font-size: 0.95rem;
+  color: #1f1f1f;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.ideal-box.destaque .icon-text svg {
+  color: #000;
+}

@@ -56,7 +56,6 @@
 .fifth-highlight-box {
   display: inline-block;
   padding: 0.4rem 1.5rem;
-  border: 3px solid #facc15;
   border-radius: 5px;
   font-weight: 700;
   background-color: transparent;
@@ -90,7 +89,6 @@
 }
 
 .fifth-btn:hover {
-  background-color: #facc15; 
   color: #000; 
   transform: scale(1.05);
 }

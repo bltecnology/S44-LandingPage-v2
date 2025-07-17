@@ -19,7 +19,7 @@ export function SecondSection() {
           </p>
         </div>
 
-        <div className="card">
+        <a href="/banner-operacoes" className="card">
           <div className="icon-circle">
             <PackageSearch size={28} strokeWidth={2} />
           </div>
@@ -27,7 +27,8 @@ export function SecondSection() {
           <p>
             Oferecemos soluções para cargas perigosas e coletas de exportação com infraestrutura adequada.
           </p>
-        </div>
+        </a>
+
 
         <div className="card">
           <div className="icon-circle">
