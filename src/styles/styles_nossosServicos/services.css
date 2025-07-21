@@ -1,19 +1,18 @@
-.fourth-section {
+.transito-section {
   padding: 4rem 2rem;
   background-color: #f7f7f7;
   text-align: center;
 }
 
-.fourth-section h2 {
+.transito-section h2 {
   color: #3b3b3b;
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.fourth-section-container {
+.transito-section-container {
   display: flex;
-  background-color: #3F3E40;
   border-radius: 8px;
   overflow: hidden;
   max-width: 1600px;
@@ -25,8 +24,7 @@
   margin-top: 7rem;
 }
 
-
-.fourth-truck-image {
+.transito-truck-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -35,7 +33,7 @@
   z-index: 2;
 }
 
-.fourth-text-content {
+.transito-text-content {
   flex: 2;
   padding: 2rem;
   display: flex;
@@ -48,14 +46,14 @@
   justify-content: space-between;
 }
 
-.fourth-highlight-box {
+.transito-highlight-box {
   display: inline-block;
   padding: 0.2rem 1.5rem;
   border: 3px solid #facc15;
   border-radius: 5px;
   font-weight: 700;
   background-color: transparent;
-  color: #fff;
+  color: black;
   margin-bottom: 1.5rem;
   margin-top: 0;
   font-size: 1.5rem;
@@ -64,17 +62,17 @@
   margin-left: 0;
 }
 
-.fourth-description {
+.transito-description {
   font-size: 1rem;
-  color: #fff;
+  color: black;
   max-width: 900px;
 }
 
-.fourth-btn {
+.transito-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: black;
   font-weight: 600;
   border-radius: 6px;
   padding: 0.75rem 1.5rem;
@@ -85,104 +83,103 @@
   transition: all 0.3s ease-in-out;
 }
 
-.fourth-btn:hover {
+.transito-btn:hover {
   background-color: #facc15; 
   color: #000; 
   transform: scale(1.05);
 }
 
-.fourth-triangle-container {
+.transito-triangle-container {
   position: absolute;
   top: 220px;
   left: -1px;
   z-index: 0;
 }
 
-.fourth-triangle-image {
+.transito-triangle-image {
   width: 300px;
   height: auto;
 }
 
-/* RESPONSIVIDADE PARA AS TELAS  */
+/* Responsivo */
 @media (max-width: 768px) {
-.fourth-section-container {
-  flex-direction: column;
-  text-align: center;
-  margin-top: 5rem;
-}
-
-.fourth-truck-image {
-  display: none;
-}
-
-.fourth-triangle-container {
-  position: absolute;
-  top: 250px;
-  left: 10%;
-  transform: translateX(-50%);
-  z-index: 0;
-}
-
-.fourth-triangle-image {
-  width: 400px;
-}
-
-.fourth-text-content {
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.fourth-highlight-box {
-  font-size: 1.1rem;
-  max-width: 100%;
-  margin-top: 1rem;
-}
-
-.fourth-btn {
-  font-size: 0.9rem;
-  padding: 0.65rem 1rem;
-  width: 100%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-@media (max-width: 425px) {
-
-  .fourth-section-container {
+  .transito-section-container {
     flex-direction: column;
     text-align: center;
     margin-top: 5rem;
   }
-  
-  .fourth-triangle-container {
+
+  .transito-truck-image {
+    display: none;
+  }
+
+  .transito-triangle-container {
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+
+  .transito-triangle-image {
+    width: 400px;
+  }
+
+  .transito-text-content {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .transito-highlight-box {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .transito-btn {
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .transito-section-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .transito-triangle-container {
     top: 300px;
     left: 20%;
     transform: translateX(-50%);
   }
 
-  .fourth-triangle-image {
+  .transito-triangle-image {
     width: 300px;
   }
 
-.fourth-highlight-box {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-}
+  .transito-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 
-.fourth-text-content {
-  font-size: 0.85rem;
-  padding: 1rem;
-}
+  .transito-text-content {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
 
-.fourth-btn {
-  font-size: 0.85rem;
-  width: 100%;
-  padding: 0.6rem 1rem;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .transito-btn {
+    font-size: 0.85rem;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

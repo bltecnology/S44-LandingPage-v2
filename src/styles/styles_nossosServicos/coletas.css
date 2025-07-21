@@ -1,17 +1,17 @@
-.sixth-section {
+.coleta-section {
   padding: 4rem 2rem;
   background-color: #f7f7f7;
   text-align: center;
 }
 
-.sixth-section h2 {
+.coleta-section h2 {
   color: #3b3b3b;
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.sixth-section-container {
+.coleta-section-container {
   display: flex;
   background-color: #fff;
   border-radius: 8px;
@@ -24,8 +24,7 @@
   z-index: 1;
 }
 
-
-.sixth-truck-image {
+.coleta-truck-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -34,7 +33,7 @@
   z-index: 2;
 }
 
-.sixth-text-content {
+.coleta-text-content {
   flex: 2;
   padding: 2rem;
   display: flex;
@@ -47,7 +46,7 @@
   justify-content: space-between;
 }
 
-.sixth-highlight-box {
+.coleta-highlight-box {
   display: inline-block;
   padding: 0.2rem 1.5rem;
   border: 3px solid #facc15;
@@ -63,13 +62,13 @@
   margin-left: 0;
 }
 
-.sixth-description {
+.coleta-description {
   font-size: 1rem;
   color: #000;
   max-width: 900px;
 }
 
-.sixth-btn {
+.coleta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -84,74 +83,74 @@
   transition: all 0.3s ease-in-out;
 }
 
-.sixth-btn:hover {
+.coleta-btn:hover {
   background-color: #facc15; 
   color: #000; 
   transform: scale(1.05);
 }
 
-.sixth-triangle-container {
+.coleta-triangle-container {
   position: absolute;
   top: 50px;
   left: -1px;
   z-index: 0;
 }
 
-.sixth-triangle-image {
+.coleta-triangle-image {
   width: 300px;
   height: auto;
 }
 
-/* RESPONSIVIDADE PARA AS TELAS  */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
-.sixth-section-container {
-  flex-direction: column;
-  text-align: center;
-}
+  .coleta-section-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.sixth-truck-image {
-  display: none;
-}
+  .coleta-truck-image {
+    display: none;
+  }
 
-.sixth-text-content {
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-}
+  .coleta-text-content {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
 
-.sixth-highlight-box {
-  font-size: 1.1rem;
-  max-width: 100%;
-  margin-top: 1rem;
-}
+  .coleta-highlight-box {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
 
-.sixth-btn {
-  font-size: 0.9rem;
-  padding: 0.65rem 1rem;
-  width: 100%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .coleta-btn {
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 425px) {
-.sixth-highlight-box {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-}
+  .coleta-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 
-.sixth-text-content {
-  font-size: 0.85rem;
-  padding: 1rem;
-}
+  .coleta-text-content {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
 
-.sixth-btn {
-  font-size: 0.85rem;
-  width: 100%;
-  padding: 0.6rem 1rem;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .coleta-btn {
+    font-size: 0.85rem;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -5,27 +5,27 @@ import { Link } from "react-router-dom";
 
 export function CargasSensiveis() {
     return (
-        <section className="seventh-section">
-            <div className="seventh-section-container">
-                <div className="seventh-image-container">
-                    <img src={coletas_exportacao} alt="Caminhão na estrada" className="seventh-truck-image" />
+        <section className="sensivel-section">
+            <div className="sensivel-section-container">
+                <div className="sensivel-image-container">
+                    <img src={coletas_exportacao} alt="Caminhão na estrada" className="sensivel-truck-image" />
                 </div>
 
-                <div className="seventh-text-content">
-                    <h3 className="seventh-highlight-box">Transporte de Cargas Sensíveis</h3>
-                    <p className="seventh-description">
+                <div className="sensivel-text-content">
+                    <h3 className="sensivel-highlight-box">Transporte de Cargas Sensíveis</h3>
+                    <p className="sensivel-description">
                         Com expertise no transporte de cargas delicadas, oferecemos soluções especializadas para o transporte de mercadorias sensíveis.
                         Cuidamos de itens como produtos eletrônicos, equipamentos médicos, alimentos perecíveis e outros produtos de alto valor ou fragilidade.
                         Garantimos que as mercadorias sejam manuseadas, embaladas e transportadas com o máximo de segurança, evitando danos e assegurando sua integridade durante todo o trajeto.
                     </p>
-                    <Link to="#" className="seventh-btn">
-                        Solicite nossos serviços ↗
+                    <Link to="#" className="sensivel-btn">
+                        Saiba mais sobre Transporte de Cargas Sensíveis ↗
                     </Link>
                 </div>
             </div>
 
-            <div className="seventh-triangle-container">
-                <img src={trianguloAmarelo} alt="Triângulo Amarelo" className="seventh-triangle-image" />
+            <div className="sensivel-triangle-container">
+                <img src={trianguloAmarelo} alt="Triângulo Amarelo" className="sensivel-triangle-image" />
             </div>
         </section>
     );

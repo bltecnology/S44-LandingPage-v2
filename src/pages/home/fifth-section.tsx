@@ -20,7 +20,7 @@ export function FifthSection() {
                         Com isso, facilitamos o processo de importação e garantimos que os produtos possam seguir para os próximos estágios do transporte sem burocracia.
                     </p>
                     <div className="fifth-btn">
-                        <a href="/entrega" className="btn">Solicite nossos serviços ↗</a>
+                        <a href="/entrega" className="eighth-btn">Solicite nossos serviços ↗</a>
                     </div>
                 </div>
             </div>

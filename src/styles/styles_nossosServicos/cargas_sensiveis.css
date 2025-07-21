@@ -1,159 +1,156 @@
-.seventh-section {
-    padding: 4rem 2rem;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-  
-  .seventh-section h2 {
-    color: #3b3b3b;
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
+.sensivel-section {
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
 
-  
-  .seventh-section-container {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
-    max-width: 1600px;
-    margin: 2rem auto 0 auto;
-    text-align: left;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .seventh-truck-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    position: relative; 
-    z-index: 2;
-  }
-  
-  .seventh-text-content {
-    flex: 2;
-    padding: 2rem;
-    display: flex;
+.sensivel-section h2 {
+  color: #3b3b3b;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.sensivel-section-container {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 1600px;
+  margin: 2rem auto 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.sensivel-truck-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.sensivel-text-content {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.sensivel-highlight-box {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  border: 3px solid #facc15;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: transparent;
+  color: #000;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 40%;
+  margin-left: 0;
+}
+
+.sensivel-description {
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+.sensivel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  text-align: left;
+  max-width: max-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.sensivel-btn:hover {
+  background-color: #facc15;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.sensivel-triangle-container {
+  position: absolute;
+  top: 60px;
+  right: -1%;
+  z-index: 0;
+}
+
+.sensivel-triangle-image {
+  width: 300px;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .sensivel-section-container {
     flex-direction: column;
-    justify-content: center;
-    color: #000;
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: left;
-    justify-content: space-between;
-  }
-  
-  .seventh-highlight-box {
-    display: inline-block;
-    padding: 0.4rem 1.5rem;
-    border: 3px solid #facc15;
-    border-radius: 5px;
-    font-weight: 700;
-    background-color: transparent;
-    color: #000;
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-    font-size: 1.5rem;
     text-align: center;
-    max-width: 40%;
-    margin-left: 0;
   }
-  
-  .seventh-description {
-    opacity: 0.9;
-    margin-top: 0.5rem;
+
+  .sensivel-truck-image {
+    display: none;
   }
-  
-  .seventh-btn {
-    display: inline-flex;
-    align-items: center;
+
+  .sensivel-text-content {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .sensivel-highlight-box {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .sensivel-btn {
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+    width: 100%;
     justify-content: center;
-    color: #000;
-    font-weight: 600;
-    border-radius: 6px;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    margin-top: 2rem;
-    text-align: left; 
-    max-width: max-content;
-    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .seventh-btn:hover {
-    background-color: #facc15; 
-    color: #000; 
-    transform: scale(1.05);
+}
+
+@media (max-width: 425px) {
+  .sensivel-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
   }
 
-  .seventh-triangle-container {
-    position: absolute;
-    top: 60px;
-    right: -1%;
-    z-index: 0;
+  .sensivel-text-content {
+    font-size: 0.85rem;
+    padding: 1rem;
   }
-  
-  .seventh-triangle-image {
-    width: 300px;
-    height: auto;
-    transform: scaleX(-1); 
-  }
-  
 
-  /* RESPONSIVIDADE PARA AS TELAS  */
-  @media (max-width: 768px) {
-    .seventh-section-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .seventh-truck-image {
-      display: none;
-    }
-  
-    .seventh-text-content {
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  
-    .seventh-highlight-box {
-      font-size: 1.1rem;
-      max-width: 100%;
-      margin-top: 1rem;
-    }
-  
-    .seventh-btn {
-      font-size: 0.9rem;
-      padding: 0.65rem 1rem;
-      width: 100%;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .sensivel-btn {
+    font-size: 0.85rem;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  @media (max-width: 425px) {
-    .seventh-highlight-box {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    .seventh-text-content {
-      font-size: 0.85rem;
-      padding: 1rem;
-    }
-  
-    .seventh-btn {
-      font-size: 0.85rem;
-      width: 100%;
-      padding: 0.6rem 1rem;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-  
+}

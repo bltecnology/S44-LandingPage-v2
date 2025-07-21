@@ -1,158 +1,155 @@
-.ninth-section {
-    padding: 4rem 2rem;
-    background-color: #f7f7f7;
-    text-align: center;
-  }
-  
-  .ninth-section h2 {
-    color: #3b3b3b;
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  .ninth-section-container {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: #646365;
-    border-radius: 12px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    max-width: 1600px;
-    margin: 2rem auto 0 auto;
-    text-align: left;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .ninth-truck-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    position: relative; 
+.armazenagem-section {
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.armazenagem-section h2 {
+  color: #3b3b3b;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.armazenagem-section-container {
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  max-width: 1600px;
+  margin: 2rem auto 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.armazenagem-truck-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative; 
   z-index: 2;
-  }
-  
-  .ninth-text-content {
-    flex: 2;
-    padding: 2rem;
-    display: flex;
+}
+
+.armazenagem-text-content {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.armazenagem-highlight-box {
+  display: inline-block;
+  padding: 0.4rem 1.5rem;
+  border: 3px solid #facc15;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: transparent;
+  color: black;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 40%;
+  margin-left: 0;
+}
+
+.armazenagem-description {
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+.armazenagem-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  text-align: left; 
+  max-width: max-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.armazenagem-btn:hover {
+  background-color: #facc15; 
+  color: #000; 
+  transform: scale(1.05);
+}
+
+.armazenagem-triangle-container {
+  position: absolute;
+  top: 60px;
+  right: -1%;
+  z-index: 0;
+}
+
+.armazenagem-triangle-image {
+  width: 300px;
+  height: auto;
+  transform: scaleX(-1); 
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .armazenagem-section-container {
     flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: left;
-    justify-content: space-between;
-  }
-  
-  .ninth-highlight-box {
-    display: inline-block;
-    padding: 0.4rem 1.5rem;
-    border: 3px solid #facc15;
-    border-radius: 5px;
-    font-weight: 700;
-    background-color: transparent;
-    color: #fff;
-    margin-bottom: 1.5rem;
-    margin-top: 0;
-    font-size: 1.5rem;
     text-align: center;
-    max-width: 40%;
-    margin-left: 0;
-  }
-  
-  .ninth-description {
-    opacity: 0.9;
-    margin-top: 0.5rem;
-  }
-  
-  .ninth-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 6px;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    margin-top: 2rem;
-    text-align: left; 
-    max-width: max-content;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .ninth-btn:hover {
-    background-color: #facc15; 
-    color: #000; 
-    transform: scale(1.05);
-  }
-  
-  .ninth-triangle-container {
-    position: absolute;
-    top: 60px;
-    right: -1%;
-    z-index: 0;
-  }
-  
-  .ninth-triangle-image {
-    width: 300px;
-    height: auto;
-    transform: scaleX(-1); 
   }
 
-  /* RESPONSIVIDADE PARA AS TELAS  */
-  @media (max-width: 768px) {
-    .ninth-section-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .ninth-truck-image {
-      display: none;
-    }
-  
-    .ninth-text-content {
-      padding: 1.5rem;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-  
-    .ninth-highlight-box {
-      font-size: 1.1rem;
-      max-width: 100%;
-      margin-top: 1rem;
-    }
-  
-    .ninth-btn {
-      font-size: 0.9rem;
-      padding: 0.65rem 1rem;
-      width: 100%;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .armazenagem-truck-image {
+    display: none;
   }
-  
-  @media (max-width: 425px) {
-    .ninth-highlight-box {
-      font-size: 1rem;
-      padding: 0.5rem 1rem;
-    }
-  
-    .ninth-text-content {
-      font-size: 0.85rem;
-      padding: 1rem;
-    }
-  
-    .ninth-btn {
-      font-size: 0.85rem;
-      width: 100%;
-      padding: 0.6rem 1rem;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
+  .armazenagem-text-content {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
   }
-  
+
+  .armazenagem-highlight-box {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .armazenagem-btn {
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .armazenagem-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .armazenagem-text-content {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+
+  .armazenagem-btn {
+    font-size: 0.85rem;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,9 +1,8 @@
 import "../../styles/nossasoperacoes/servicos-cargas.css";
 import mosaicoImage from "../../assets/9.jpg";
 
-// Ícones
-import { FaBuilding, FaTruckMoving } from "react-icons/fa";
-import { LuMic } from "react-icons/lu";
+import { FiRefreshCcw } from "react-icons/fi";
+import { FaUsers, FaGlobeAmericas } from "react-icons/fa";  
 
 export function TransporteContainer() {
   return (
@@ -15,18 +14,17 @@ export function TransporteContainer() {
 
     <div className="text-column">
       <h2 className="title">
-        <span className="number">01</span> Serviços de <strong>Carga lotação</strong>
+        <span className="number">02</span> Transporte  <strong>de containers</strong>
       </h2>
       <p className="description">
-        A S44 oferece serviços especializados de carga lotação, proporcionando transporte eficiente e seguro para cargas de grande volume. Com uma frota de caminhões modernos, atendemos empresas que necessitam de soluções rápidas e confiáveis para o transporte de mercadorias de forma exclusiva, com coleta e entrega programada.
-      </p>
+        A S44 oferece soluções especializadas no transporte de containers, garantindo segurança e eficiência para o transporte de mercadorias por grandes distâncias. Com nossa frota equipada, proporcionamos logística de ponta para empresas que precisam de transporte de carga internacional ou doméstica.      </p>
 
       <div className="benefits">
         <h3>O que oferecemos:</h3>
         <ul>
-          <li><strong>Transporte Exclusivo:</strong> Carga única, sem divisão com outras mercadorias.</li>
-          <li><strong>Maior Rapidez e Segurança:</strong> Menor tempo de trânsito e cuidados dedicados com cada carga.</li>
-          <li><strong>Atendimento Personalizado:</strong> Planejamento de rotas e horários conforme a sua necessidade.</li>
+          <li><strong>Transporte de Containers:</strong> Transporte seguro de containers de 20’, 40’ e outros tipos..</li>
+          <li><strong>Carga e Descarga:</strong> Serviços completos de carga e descarga com equipamentos especializados.</li>
+          <li><strong>Atendimento Ágil:</strong> Planejamento de rotas, otimização de tempo e segurança garantida durante todo o processo.</li>
         </ul>
       </div>
     </div>
@@ -37,19 +35,19 @@ export function TransporteContainer() {
     <div className="ideal-options">
       <div className="ideal-box">
         <div className="icon-text">
-          <FaBuilding size={24} />
-          <span>Empresas de grande porte</span>
+          <FiRefreshCcw size={24} />
+          <span>Importação e Exportação</span>
         </div>
       </div>
       <div className="ideal-box destaque">
         <div className="icon-text">
-          <FaTruckMoving size={24} />
-          <span>Cargas pesadas ou volumosas</span>
+          <FaUsers size={24} />
+          <span>Empresas com alto volume de carga</span>
         </div>
       </div>
       <div className="ideal-box">
         <div className="icon-text">
-          <LuMic size={24} />
+          <FaGlobeAmericas size={24} />
           <span>Transporte de itens que necessitam de cuidado especial</span>
         </div>
       </div>
