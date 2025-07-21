@@ -50,17 +50,17 @@
   cursor: pointer;
 }
 
-/* Caminhão */
+
 .tucker-image-wrapper {
   position: absolute;
-  right: -75px; 
+  right: 190px; 
   width: auto;
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 2;
-  transform: none; /* remove o scale */
+  transform: none;
   transform: scale(1.8);
   bottom: -200px;
 }

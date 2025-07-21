@@ -92,6 +92,6 @@
   height: auto;
   object-fit: cover;
   align-self: flex-start;
-  transform: translateX(10px); /* ajuste aqui pra mover na horizontal */
+  transform: translateX(10px); 
 }
 

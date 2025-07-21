@@ -7,7 +7,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-top: 100px; /* Reduzido para equilibrar com novo espaçamento */
+  padding-top: 100px; 
 }
 
 .banner-overlay {
@@ -23,8 +23,8 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 0rem; /* Zerado para controle total via margem */
-  padding-left: 250px;
+  gap: 0rem; 
+  padding-left: 0px;
 }
 
 .back-link {
@@ -32,7 +32,7 @@
   text-decoration: none;
   font-size: 0.85rem;
   transition: color 0.3s;
-  margin-bottom: 2.5rem; /* espaçamento mais generoso entre link e título */
+  margin-bottom: 2.5rem; 
 }
 
 .back-link:hover {
@@ -42,7 +42,7 @@
 .service-banner .banner-overlay .banner-content h1 {
   font-size: 3.5rem !important;
   font-weight: 800 !important;
-  margin: 0; /* remove margem inferior do h1 */
+  margin: 0; 
   color: #fff;
 }
 

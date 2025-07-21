@@ -7,24 +7,24 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: nowrap; /* ← importante! impede quebra */
+  flex-wrap: nowrap; 
   gap: 60px;
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 80px;
 }
 
-/* Lados fixos */
+
 .textLeft,
 .textRight {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  width: 300px; /* largura fixa */
-  flex-shrink: 0; /* impede que encolham se a imagem crescer */
+  width: 300px; 
+  flex-shrink: 0; 
 }
 
-/* Texto dos itens */
+
 .item {
   display: flex;
   flex-direction: column;
@@ -41,21 +41,21 @@
   line-height: 1.8;
 }
 
-/* Bloco central com imagem */
+
 .centerContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex: 1; /* pega o espaço que sobrar */
-  max-width: 1000px; /* limite visual da imagem */
+  flex: 1; 
+  max-width: 1000px; 
 }
 
-/* Imagem ajustável */
+
 .truckImage {
   width: 100%;
-  max-width: 1700px; /* define o tamanho final que você quer */
+  max-width: 1700px; 
   height: auto;
   object-fit: contain;
   display: block;

@@ -1,8 +1,5 @@
-// src/components/CustomsTransit.tsx
 import "../../styles/services/conteudo-transito.css";
-
-import mosaicoImage from "../../assets/1.png"; // nome que quiser dar
-
+import mosaicoImage from "../../assets/1.png"; 
 
 export function ConteudoEntregas() {
   return (

@@ -4,13 +4,13 @@ section {
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-  width: 100vw; /* Garantir que ocupe toda a tela */
+  width: 100vw; 
 }
 
 
 .section-container {
-  width: 100%; /* Ocupa tudo */
-  max-width: unset; /* Remove limitação */
+  width: 100%; 
+  max-width: unset; 
   margin: 0;
   display: flex;
   align-items: center;
@@ -109,7 +109,7 @@ section {
 
 .image-wrapper {
   position: absolute; 
-  right: -220px;  
+  right: 20px;  
   bottom: -50px;
   height: 100%;
   display: flex;

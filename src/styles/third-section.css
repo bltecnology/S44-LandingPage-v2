@@ -82,6 +82,7 @@
 
 .cargo-list li span {
   opacity: 0.7;
+  color: white;
 }
 
 .truck-image {

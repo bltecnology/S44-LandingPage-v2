@@ -10,7 +10,7 @@ export function ServiceForm() {
     >
     <div className="form-content">
       <h1>
-        Solicite um de <span>nossos serviços!</span>
+        Solicite um dos <span className="highlight">nossos serviços!</span>
       </h1>
 
       <form>

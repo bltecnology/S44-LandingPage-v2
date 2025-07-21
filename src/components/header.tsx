@@ -9,12 +9,10 @@ export const Header: React.FC = () => {
       <header className="navbar">
         <div className="navbar-container">
         <div className="navbar-content">
-          {/* Logo */}
           <div className="navbar-left">
             <img src={logo} alt="Logo S44" className="logo" />
           </div>
 
-          {/* Menu */}
           <nav className="navbar-menu">
             <Link to="/" className="navbar-link">Home</Link>
             <Link to="/quem-somos" className="navbar-link">Quem somos</Link>
@@ -22,7 +20,7 @@ export const Header: React.FC = () => {
             <Link to="/servicos" className="navbar-link">Nossos Serviços</Link>
           </nav>
 
-          {/* Botão WhatsApp */}
+    
           <div className="navbar-right">
             <a
               href="https://wa.me/5511999999999"

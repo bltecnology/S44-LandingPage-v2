@@ -9,7 +9,6 @@ export function ContEntregas() {
   return (
     <section className="benefits-section">
       <div className="benefits-wrapper">
-        {/* Coluna Esquerda */}
         <div className="benefits-column">
           <div className="benefit-card yellow">
             <FaDollarSign size={24} />
@@ -21,7 +20,6 @@ export function ContEntregas() {
           </div>
         </div>
 
-        {/* Texto Central */}
         <div className="benefits-center">
           <h2>
             <span className="number">02</span> Benefícios do Trânsito aduaneiro
@@ -33,7 +31,6 @@ export function ContEntregas() {
           </p>
         </div>
 
-        {/* Coluna Direita */}
         <div className="benefits-column">
           <div className="benefit-card white">
             <BiShieldQuarter size={24} />

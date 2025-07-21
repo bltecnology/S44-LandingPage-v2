@@ -40,7 +40,7 @@ export function SecondSection() {
           </p>
         </div>
 
-        <div className="card">
+        <a href="/banner-atendimento" className="card">
           <div className="icon-circle">
             <UserCheck size={28} strokeWidth={2} />
           </div>
@@ -48,7 +48,7 @@ export function SecondSection() {
           <p>
             Adaptamos nossos serviços às necessidades específicas de cada cliente.
           </p>
-        </div>
+        </a>
       </div>
     </section>
   );
