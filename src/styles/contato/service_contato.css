@@ -1,0 +1,107 @@
+.service-form-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  gap: 2rem; /* reduzido para aproximar o formulário da imagem */
+}
+
+.form-content {
+  max-width: 50%; /* menos largura para chegar mais perto da imagem */
+  background-color: rgba(255, 255, 255, 0.15); /* mais claro que o anterior */
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  backdrop-filter: blur(5px); /* deixa o fundo um pouco embaçado */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.form-content h1 span {
+  color: #facc15;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+input,
+select,
+textarea {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+button.submit {
+  background-color: #facc15;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.clear {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Caminhão com destaque à direita */
+.truck-wrapper {
+  position: absolute; /* ← muda para absoluto */
+  right: 0; /* cola no canto direito */
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.truck-image-contato {
+  height: 100%; /* ocupa toda a altura da seção */
+  object-fit: cover;
+}
+
+

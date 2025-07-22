@@ -1,0 +1,58 @@
+.parceria-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.parceria-texto {
+  flex: 1;
+  padding: 0 80px;
+  max-width: 640px;
+  z-index: 2;
+  margin-left: -40px;
+}
+
+.parceria-texto h5 {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.parceria-texto h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+  border-bottom: 3px solid #facc15;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.parceria-texto p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.parceria-imagem {
+  flex: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.parceria-imagem img {
+  height: 100%;
+  object-fit: contain;
+  max-width: none;
+}
