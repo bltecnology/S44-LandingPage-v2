@@ -1,6 +1,6 @@
 import "../../styles/styles_nossosServicos/service_section.css";
-import truckImage from "../../assets/imagens_nossosServicos/nossos_servicos.png"; // Caminhão à direita 
-import banner from "../../assets/banner_principal.png"; // Traços amarelos de fundo
+import truckImage from "../../assets/imagens_nossosServicos/nossos_servicos.png"; 
+import banner from "../../assets/nossos-servicos.png"; 
 
 export function ServicesSection() {
   return (

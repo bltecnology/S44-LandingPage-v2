@@ -20,9 +20,9 @@ export function NinthSection() {
                         ideal das mercadorias, evitando perdas, extravios e otimizando o fluxo de entregas. Além disso, a armazenagem
                         própria permite economia com terceiros, maior integração com os serviços de transporte e uma operação mais eficiente do início ao fim.
                     </p>
-                    <Link to="#" className="ninth-btn">
-                        Solicite nossos serviços ↗
-                    </Link>
+                    <div>
+                        <a href="/banner-armazenamento" className="ninth-btn">Solicite nossos serviços ↗</a>
+                    </div>
                 </div>
             </div>
 

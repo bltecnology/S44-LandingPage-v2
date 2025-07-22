@@ -18,9 +18,9 @@ export function SeventhSection() {
                         Cuidamos de itens como produtos eletrônicos, equipamentos médicos, alimentos perecíveis e outros produtos de alto valor ou fragilidade.
                         Garantimos que as mercadorias sejam manuseadas, embaladas e transportadas com o máximo de segurança, evitando danos e assegurando sua integridade durante todo o trajeto.
                     </p>
-                    <Link to="#" className="seventh-btn">
-                        Solicite nossos serviços ↗
-                    </Link>
+                    <div className="fifth-btn">
+                        <a href="/banner-cargas" className="eighth-btn">Solicite nossos serviços ↗</a>
+                    </div>
                 </div>
             </div>
 

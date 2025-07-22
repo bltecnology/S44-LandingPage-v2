@@ -25,7 +25,12 @@ export function ContTransito() {
           otimizar a logística internacional, reduzir custos operacionais e
           garantir o cumprimento das exigências legais em todo o percurso.
         </p>
-        <button className="customs-button">Entre em Contato conosco →</button>
+         <button
+          className="customs-button"
+          onClick={() => (window.location.href = "/contato")}
+        >
+          Entre em Contato conosco →
+        </button>
       </div>
 
       <img

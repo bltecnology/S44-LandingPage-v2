@@ -9,16 +9,16 @@
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  gap: 2rem; /* reduzido para aproximar o formulário da imagem */
+  gap: 2rem; 
 }
 
 .form-content {
-  max-width: 50%; /* menos largura para chegar mais perto da imagem */
-  background-color: rgba(255, 255, 255, 0.15); /* mais claro que o anterior */
+  max-width: 50%; 
+  background-color: rgba(255, 255, 255, 0.15); 
   padding: 40px;
   border-radius: 10px;
   color: #fff;
-  backdrop-filter: blur(5px); /* deixa o fundo um pouco embaçado */
+  backdrop-filter: blur(5px); 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -31,6 +31,7 @@
 .form-content h1 span {
   color: #facc15;
   font-weight: bold;
+  font-size: inherit;
 }
 
 form {
@@ -88,10 +89,10 @@ button.clear {
   cursor: pointer;
 }
 
-/* Caminhão com destaque à direita */
+
 .truck-wrapper {
-  position: absolute; /* ← muda para absoluto */
-  right: 0; /* cola no canto direito */
+  position: absolute; 
+  right: 0; 
   bottom: 0;
   height: 100%;
   display: flex;
@@ -100,7 +101,7 @@ button.clear {
 }
 
 .truck-image-contato {
-  height: 100%; /* ocupa toda a altura da seção */
+  height: 100%; 
   object-fit: cover;
 }
 

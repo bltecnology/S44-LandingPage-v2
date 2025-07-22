@@ -31,9 +31,12 @@ export function Atuacao() {
           confiança, no cumprimento de prazos e na constante busca por melhoria
           contínua!
         </p>
-        <a href="/contato" className="atuacao-button">
+        <button
+          className="atuacao-button"
+          onClick={() => (window.location.href = "/contato")}
+        >
           Entre em Contato conosco →
-        </a>
+        </button>
       </div>
     </section>
   );

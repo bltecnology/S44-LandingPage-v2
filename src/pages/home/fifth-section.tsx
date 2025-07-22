@@ -1,5 +1,5 @@
 import "../../styles/fifth-section.css";
-import caminhao from "../../assets/fifth-section-caminhao.png";
+import caminhao from "../../assets/entregaDis.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
 
 

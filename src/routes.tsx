@@ -10,6 +10,10 @@ import { ServiceBanner } from "./pages/services/service_banner";
 import { EntregaBanner } from "./pages/entregas/entrega_banner";
 import { BannerOperacoes } from "./pages/nossasoperaçoes/banner_operacoes";
 import { BannerAtendimento } from "./pages/atendimento/banner_atendimento";
+import { ExportacaoBanner } from "./pages/exportacao/exportacao_banner";
+import { CargasBanner } from "./pages/cargas-sensiveis/banner_cargas";
+import { CargasPerigosasBanner } from "./pages/cargas-perigosas/banner_perigosas";
+import { ArmazenamentoBanner } from "./pages/armazenamento/banner-armazenamento";
 
 
 export const router = createBrowserRouter([
@@ -26,7 +30,10 @@ export const router = createBrowserRouter([
       { path: "/entrega", element: <EntregaBanner /> },
       { path: "/banner-operacoes", element: <BannerOperacoes /> },
       { path: "/banner-atendimento", element: <BannerAtendimento /> },
-      
+      { path: "/banner-exportacao", element: <ExportacaoBanner /> },
+      { path: "/banner-cargas", element: <CargasBanner /> },
+      { path: "/banner-cargas", element: <CargasPerigosasBanner /> },
+      { path: "/banner-armazenamento", element: <ArmazenamentoBanner /> },
     ],
   },
 ]);

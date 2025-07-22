@@ -1,5 +1,5 @@
 import "../../styles/styles_nossosServicos/entregaDis.css";
-import caminhao from "../../assets/fifth-section-caminhao.png";
+import caminhao from "../../assets/entregaDis.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
 import { Link } from "react-router-dom";
 

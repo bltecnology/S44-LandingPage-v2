@@ -1,5 +1,5 @@
 import "../../styles/certification_section.css";
-import centerTruck from "../../assets/certificacoes.png";
+import centerTruck from "../../assets/certificacoes-atualizadas.png";
 
 export function CertificationsSection() {
   return (

@@ -1,7 +1,6 @@
 import "../../styles/sixth-section.css";
 import coletas_exportacao from "../../assets/sixth-section-image.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
-import { Link } from "react-router-dom";
 
 export function SixthSection() {
     return (
@@ -18,9 +17,9 @@ export function SixthSection() {
                         Coletamos as mercadorias no local indicado e cuidamos de todo o processo logístico, incluindo o preparo da documentação necessária para exportação
                         e o transporte para os portos ou aeroportos, sempre respeitando os prazos e as regulamentações do comércio internacional.
                     </p>
-                    <Link to="#" className="sixth-btn">
-                        Solicite nossos serviços ↗
-                    </Link>
+                    <div className="fifth-btn">
+                        <a href="/banner-exportacao" className="eighth-btn">Solicite nossos serviços ↗</a>
+                    </div>
                 </div>
             </div>
 
