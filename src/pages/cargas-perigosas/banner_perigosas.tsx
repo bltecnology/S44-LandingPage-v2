@@ -1,7 +1,9 @@
 import "../../styles/services/service-banner.css";
-import backgroundImage from "../../assets/banners.png";
+import backgroundImage from "../../assets/novo-banner.png";
 
 import { ContactSection } from "../home/contact-section";
+import { ContCargasPerigosas } from "./beneficios_transporte";
+import { ConteudoCargasPerigosas } from "./transporte";
 
 
 export function CargasPerigosasBanner() {
@@ -21,7 +23,8 @@ export function CargasPerigosasBanner() {
           </div>
         </div>
       </section>
-     
+     <ConteudoCargasPerigosas />
+     <ContCargasPerigosas />
       <ContactSection/>
     </>
   );

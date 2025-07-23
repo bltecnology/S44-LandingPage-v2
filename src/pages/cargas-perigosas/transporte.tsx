@@ -1,7 +1,7 @@
 import "../../styles/services/conteudo-transito.css";
 import mosaicoImage from "../../assets/5.png"; 
 
-export function ConteudoExportacao() {
+export function ConteudoCargasPerigosas() {
   return (
     <section className="customs-section">
       <div className="customs-text">

@@ -1,5 +1,5 @@
 import "../../styles/services/service-banner.css";
-import backgroundImage from "../../assets/banners.png";
+import backgroundImage from "../../assets/novo-banner.png";
 import { ContTransito } from "./conteudo_transito";
 import { MaisCont } from "./maisCont";
 import { ContactSection } from "../home/contact-section";

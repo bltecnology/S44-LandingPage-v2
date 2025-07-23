@@ -1,5 +1,5 @@
 import "../../styles/services/service-banner.css";
-import backgroundImage from "../../assets/banners.png";
+import backgroundImage from "../../assets/novo-banner.png";
 
 import { ContactSection } from "../home/contact-section";
 import { ConteudoCapacidade } from "./capacidade";

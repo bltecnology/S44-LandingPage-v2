@@ -18,9 +18,9 @@ export function Coletas() {
                         Coletamos as mercadorias no local indicado e cuidamos de todo o processo logístico, incluindo o preparo da documentação necessária para exportação
                         e o transporte para os portos ou aeroportos, sempre respeitando os prazos e as regulamentações do comércio internacional.
                     </p>
-                    <Link to="#" className="coleta-btn">
-                        Saiba mais sobre Coletas de Exportação ↗
-                    </Link>
+                    <div>
+                        <a href="/banner-exportacao" className="coleta-btn">Saiba mais sobre Coletas de Exportação ↗</a>
+                    </div>
                 </div>
             </div>
 

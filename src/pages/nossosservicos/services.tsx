@@ -26,9 +26,9 @@ export function Services() {
             serviço assegura que todas as exigências legais sejam cumpridas, mantendo a conformidade com as normas
             fiscais e aduaneiras, facilitando o transporte internacional e a movimentação interna de mercadorias.
           </p>
-          <Link to="#" className="transito-btn">
-            Saiba mais sobre Trânsito Aduaneiro ↗
-          </Link>
+          <div>
+            <a href="/service" className="transito-btn">Saiba mais sobre Trânsito Aduaneiro ↗</a>
+          </div>
         </div>
       </div>
 

@@ -2,7 +2,7 @@ import "../../styles/services/maisCont.css";
 
 import { FaExclamationTriangle ,FaUserCog, FaRegStar, FaCheckCircle } from "react-icons/fa";
 
-export function ContCargas() {
+export function ContCargasPerigosas() {
   return (
     <section className="benefits-section">
       <div className="benefits-wrapper">

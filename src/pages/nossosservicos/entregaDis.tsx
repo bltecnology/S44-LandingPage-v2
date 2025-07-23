@@ -19,9 +19,9 @@ export function EntregaDis() {
                         cumprindo todos os procedimentos necessários para a liberação das mercadorias na alfândega.
                         Com isso, facilitamos o processo de importação e garantimos que os produtos possam seguir para os próximos estágios do transporte sem burocracia.
                     </p>
-                    <Link to="#" className="di-btn">
-                        Saiba mais sobre Entrega de DI’s ↗
-                    </Link>
+                    <div>
+                        <a href="/entrega" className="di-btn">Saiba mais sobre Entrega de DI’s ↗</a>
+                    </div>
                 </div>
             </div>
 

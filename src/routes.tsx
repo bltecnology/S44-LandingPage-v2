@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
       { path: "/banner-atendimento", element: <BannerAtendimento /> },
       { path: "/banner-exportacao", element: <ExportacaoBanner /> },
       { path: "/banner-cargas", element: <CargasBanner /> },
-      { path: "/banner-cargas", element: <CargasPerigosasBanner /> },
+      { path: "/banner-cargas-perigosas", element: <CargasPerigosasBanner /> },
       { path: "/banner-armazenamento", element: <ArmazenamentoBanner /> },
     ],
   },

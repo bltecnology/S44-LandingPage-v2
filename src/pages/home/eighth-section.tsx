@@ -21,7 +21,7 @@ export function EighthSection() {
                         Utilizamos equipamentos adequados e motoristas treinados para garantir a excelência no serviço.
                     </p>
                     <div className="fifth-btn">
-                        <a href="/banner-cargas" className="eighth-btn">Solicite nossos serviços ↗</a>
+                        <a href="/banner-cargas-perigosas" className="eighth-btn">Solicite nossos serviços ↗</a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import "../../styles/nossasoperacoes/servicos-cargas.css";
-import mosaicoImage from "../../assets/9.jpg";
+import mosaicoImage from "../../assets/8.png";
 
 import { FiRefreshCcw } from "react-icons/fi";
 import { FaUsers, FaGlobeAmericas } from "react-icons/fa";  
