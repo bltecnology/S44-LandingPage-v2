@@ -29,7 +29,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  position: relative; 
+  position: relative;
   z-index: 2;
 }
 
@@ -38,12 +38,11 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   color: #000;
   font-size: 1rem;
   line-height: 1.6;
   text-align: left;
-  justify-content: space-between;
 }
 
 .perigosa-highlight-box {
@@ -55,11 +54,9 @@
   background-color: transparent;
   color: #000;
   margin-bottom: 1.5rem;
-  margin-top: 0;
   font-size: 1.5rem;
-  text-align: center;
   max-width: 40%;
-  margin-left: 0;
+  text-align: center;
 }
 
 .perigosa-description {
@@ -78,14 +75,13 @@
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   margin-top: 3rem;
-  text-align: left; 
   max-width: max-content;
   transition: all 0.3s ease-in-out;
 }
 
 .perigosa-btn:hover {
-  background-color: #facc15; 
-  color: #000; 
+  background-color: #facc15;
+  color: #000;
   transform: scale(1.05);
 }
 
@@ -101,7 +97,7 @@
   height: auto;
 }
 
-/* RESPONSIVIDADE */
+/* TABLET */
 @media (max-width: 768px) {
   .perigosa-section-container {
     flex-direction: column;
@@ -110,6 +106,16 @@
 
   .perigosa-truck-image {
     display: none;
+  }
+
+  .perigosa-triangle-container {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .perigosa-triangle-image {
+    width: 250px;
   }
 
   .perigosa-text-content {
@@ -121,7 +127,7 @@
   .perigosa-highlight-box {
     font-size: 1.1rem;
     max-width: 100%;
-    margin-top: 1rem;
+    margin: 1rem auto 1.5rem;
   }
 
   .perigosa-btn {
@@ -129,28 +135,38 @@
     padding: 0.65rem 1rem;
     width: 100%;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 0;
   }
 }
 
+/* MOBILE */
 @media (max-width: 425px) {
-  .perigosa-highlight-box {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+  .perigosa-triangle-container {
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .perigosa-triangle-image {
+    width: 200px;
   }
 
   .perigosa-text-content {
-    font-size: 0.85rem;
     padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .perigosa-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
   }
 
   .perigosa-btn {
     font-size: 0.85rem;
-    width: 100%;
     padding: 0.6rem 1rem;
+    width: 100%;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 0;
   }
 }

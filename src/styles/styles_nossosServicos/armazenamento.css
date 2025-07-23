@@ -28,7 +28,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  position: relative; 
+  position: relative;
   z-index: 2;
 }
 
@@ -37,12 +37,11 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   color: black;
   font-size: 1rem;
   line-height: 1.6;
   text-align: left;
-  justify-content: space-between;
 }
 
 .armazenagem-highlight-box {
@@ -54,11 +53,9 @@
   background-color: transparent;
   color: black;
   margin-bottom: 1.5rem;
-  margin-top: 0;
   font-size: 1.5rem;
-  text-align: center;
   max-width: 40%;
-  margin-left: 0;
+  text-align: center;
 }
 
 .armazenagem-description {
@@ -76,14 +73,13 @@
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   margin-top: 2rem;
-  text-align: left; 
   max-width: max-content;
   transition: all 0.3s ease-in-out;
 }
 
 .armazenagem-btn:hover {
-  background-color: #facc15; 
-  color: #000; 
+  background-color: #facc15;
+  color: #000;
   transform: scale(1.05);
 }
 
@@ -97,10 +93,10 @@
 .armazenagem-triangle-image {
   width: 300px;
   height: auto;
-  transform: scaleX(-1); 
+  transform: scaleX(-1);
 }
 
-/* RESPONSIVIDADE */
+/* TABLET */
 @media (max-width: 768px) {
   .armazenagem-section-container {
     flex-direction: column;
@@ -109,6 +105,16 @@
 
   .armazenagem-truck-image {
     display: none;
+  }
+
+  .armazenagem-triangle-container {
+    top: 80px;
+    right: 50%;
+    transform: translateX(50%) scaleX(-1);
+  }
+
+  .armazenagem-triangle-image {
+    width: 250px;
   }
 
   .armazenagem-text-content {
@@ -120,7 +126,7 @@
   .armazenagem-highlight-box {
     font-size: 1.1rem;
     max-width: 100%;
-    margin-top: 1rem;
+    margin: 1rem auto 1.5rem;
   }
 
   .armazenagem-btn {
@@ -128,28 +134,38 @@
     padding: 0.65rem 1rem;
     width: 100%;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 0;
   }
 }
 
+/* CELULAR */
 @media (max-width: 425px) {
-  .armazenagem-highlight-box {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+  .armazenagem-triangle-container {
+    top: 110px;
+    right: 50%;
+    transform: translateX(50%) scaleX(-1);
+  }
+
+  .armazenagem-triangle-image {
+    width: 200px;
   }
 
   .armazenagem-text-content {
-    font-size: 0.85rem;
     padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .armazenagem-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
   }
 
   .armazenagem-btn {
     font-size: 0.85rem;
-    width: 100%;
     padding: 0.6rem 1rem;
+    width: 100%;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 0;
   }
 }

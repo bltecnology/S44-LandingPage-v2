@@ -4,7 +4,7 @@
   align-items: flex-start;
   padding: 60px 80px;
   gap: 40px;
-  
+  flex-wrap: nowrap;
 }
 
 .customs-text {
@@ -37,13 +37,13 @@
 
 .customs-button {
   margin-top: 1rem;
- 
   color: #fff;
+  background-color: #facc15;
   border: none;
   padding: 12px 20px;
   font-weight: 600;
   cursor: pointer;
-  
+  transition: all 0.3s ease;
 }
 
 .customs-button:hover {
@@ -92,6 +92,86 @@
   height: auto;
   object-fit: cover;
   align-self: flex-start;
-  transform: translateX(10px); 
+  transform: translateX(10px);
 }
 
+/* TABLET */
+@media (max-width: 768px) {
+  .customs-section {
+    flex-direction: column;
+    padding: 40px 2rem;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .customs-text {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .customs-text p {
+    font-size: 0.95rem;
+  }
+
+  .customs-button {
+    font-size: 0.95rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .customs-images,
+  .customs-mosaic {
+    width: 100%;
+  }
+
+  .customs-images {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .customs-mosaic {
+    transform: none;
+    margin-top: 1rem;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 425px) {
+  .customs-section {
+    padding: 30px 1rem;
+  }
+
+  .customs-number {
+    font-size: 2rem;
+  }
+
+  .customs-title {
+    font-size: 1.2rem;
+  }
+
+  .customs-text p {
+    font-size: 0.9rem;
+  }
+
+  .customs-button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .customs-images {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .img-icon {
+    height: 120px;
+    padding: 12px;
+  }
+
+  .img-large {
+    grid-column: 1;
+  }
+}

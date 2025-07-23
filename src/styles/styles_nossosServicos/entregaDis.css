@@ -45,12 +45,11 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   color: #000;
   font-size: 0.95rem;
   line-height: 1.6;
   text-align: left;
-  justify-content: space-between;
 }
 
 .di-highlight-box {
@@ -62,11 +61,9 @@
   background-color: transparent;
   color: #000;
   margin-bottom: 1.5rem;
-  margin-top: 0;
   font-size: 1.5rem;
-  text-align: center;
   max-width: 50%;
-  margin-left: 0;
+  text-align: center;
 }
 
 .di-description {
@@ -84,7 +81,6 @@
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   margin-top: 2rem;
-  text-align: left;
   max-width: max-content;
   transition: all 0.3s ease-in-out;
 }
@@ -108,7 +104,7 @@
   transform: scaleX(-1);
 }
 
-/* RESPONSIVO */
+/* TABLET */
 @media (max-width: 768px) {
   .di-section-container {
     flex-direction: column;
@@ -119,16 +115,26 @@
     display: none;
   }
 
+  .di-triangle-container {
+    top: 90px;
+    right: 50%;
+    transform: translateX(50%) scaleX(-1);
+  }
+
+  .di-triangle-image {
+    width: 250px;
+  }
+
   .di-text-content {
     padding: 1.5rem;
-    text-align: center;
     font-size: 0.9rem;
+    text-align: center;
   }
 
   .di-highlight-box {
     font-size: 1.1rem;
     max-width: 100%;
-    margin-top: 1rem;
+    margin: 1rem auto 1.5rem;
   }
 
   .di-btn {
@@ -136,20 +142,30 @@
     padding: 0.65rem 1rem;
     width: 100%;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 0;
   }
 }
 
+/* MOBILE */
 @media (max-width: 425px) {
+  .di-triangle-container {
+    top: 120px;
+    right: 50%;
+    transform: translateX(50%) scaleX(-1);
+  }
+
+  .di-triangle-image {
+    width: 200px;
+  }
+
   .di-highlight-box {
     font-size: 1rem;
     padding: 0.5rem 1rem;
   }
 
   .di-text-content {
-    font-size: 0.85rem;
     padding: 1rem;
+    font-size: 0.85rem;
   }
 
   .di-btn {
@@ -157,7 +173,6 @@
     width: 100%;
     padding: 0.6rem 1rem;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto 0;
   }
 }

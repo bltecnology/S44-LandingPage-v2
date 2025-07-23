@@ -56,3 +56,58 @@
   object-fit: contain;
   max-width: none;
 }
+
+/* RESPONSIVO - TABLET E CELULAR */
+@media (max-width: 768px) {
+  .parceria-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .parceria-texto {
+    padding: 0;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .parceria-texto h2 {
+    font-size: 1.6rem;
+    border-bottom: 2px solid #facc15;
+    padding-bottom: 4px;
+  }
+
+  .parceria-texto p {
+    font-size: 0.95rem;
+  }
+
+  .parceria-imagem {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .parceria-imagem img {
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+  }
+}
+
+/* CELULAR PEQUENO */
+@media (max-width: 425px) {
+  .parceria-texto h2 {
+    font-size: 1.4rem;
+  }
+
+  .parceria-texto p {
+    font-size: 0.9rem;
+  }
+
+  .parceria-imagem img {
+    max-width: 100%;
+  }
+}

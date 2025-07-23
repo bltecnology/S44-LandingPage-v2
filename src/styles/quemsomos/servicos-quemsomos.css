@@ -1,0 +1,118 @@
+.services {
+  background: #f2f2f2;
+  padding: 4rem 0 3rem;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+.services__head {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.services__subtitle {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #555;
+}
+
+.services__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.services__grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 0.4rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  padding: 1.8rem 1.6rem 1.6rem;
+  position: relative;
+}
+
+.service-card:hover {
+  background: #fff8cc;
+}
+
+.service-card__icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1rem;
+  color: #f1c500;
+}
+
+.service-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.9rem;
+  color: #333;
+}
+
+.service-card__text {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+  color: #444;
+}
+
+.services__cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
+  background: #222;
+  color: #fff;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+.btn--dark {
+  background: #222;
+  color: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .services {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .services__title {
+    font-size: 1.6rem;
+  }
+}

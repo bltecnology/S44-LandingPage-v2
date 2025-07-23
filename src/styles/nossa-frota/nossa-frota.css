@@ -6,10 +6,6 @@ body {
   background-color: #f8f8f8;
 }
 
-/* =======================
-   BANNER PRINCIPAL - FROTA
-========================== */
-
 .frota-section-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -81,10 +77,6 @@ body {
   max-height: 100%;
   object-fit: contain;
 }
-
-/* =======================
-   CARROSSEL DE VEÍCULOS
-========================== */
 
 .frota-carousel-limited {
   position: relative;
@@ -232,10 +224,6 @@ body {
   display: none;
 }
 
-
-/* =======================
-   SEÇÃO DE SERVIÇOS
-========================== */
 .section-container {
   max-width: 1300px;
   margin: 0 auto;

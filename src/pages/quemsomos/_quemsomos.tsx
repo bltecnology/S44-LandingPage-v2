@@ -1,8 +1,14 @@
+import { QuemSomosHeader } from "./quemsomos"
+import { ServicosQuemsomos } from "./servicos-quemsomos"
+import { Valores } from "./valores"
 
 export const QuemSomos = () => {
   return (
     <>
-        <h1>Quem somos</h1>
+        <QuemSomosHeader/>
+        <Valores/>
+
+        <ServicosQuemsomos/>
     </>
   )
 }

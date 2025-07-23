@@ -9,6 +9,7 @@
   padding-top: 70px;
   height: 600px;
   z-index: 1;
+  gap: 2rem;
 }
 
 .section-container > div:first-child {
@@ -51,17 +52,15 @@
   cursor: pointer;
 }
 
-
 .tucker-image-wrapper {
   position: absolute;
-  right: 190px; 
+  right: 190px;
   width: auto;
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 2;
-  transform: none;
   transform: scale(1.8);
   bottom: -200px;
 }
@@ -73,3 +72,65 @@
   object-fit: contain;
 }
 
+/* TABLETS */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 2rem;
+    text-align: center;
+  }
+
+  .section-container > div:first-child {
+    max-width: 100%;
+  }
+
+  .section-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-container p {
+    font-size: 1rem;
+  }
+
+  .tucker-image-wrapper {
+    position: relative;
+    transform: scale(1);
+    bottom: 0;
+    right: 0;
+    margin-top: 3rem;
+    height: auto;
+    justify-content: center;
+  }
+
+  .tucker-image-wrapper img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 425px) {
+  .section-container {
+    padding: 40px 1rem;
+  }
+
+  .section-container h1 {
+    font-size: 2rem;
+  }
+
+  .section-container p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .tucker-image-wrapper img {
+    max-width: 100%;
+  }
+}

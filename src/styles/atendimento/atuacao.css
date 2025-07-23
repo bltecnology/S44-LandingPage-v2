@@ -72,3 +72,70 @@
   background-color: #facc15;
   color: #000;
 }
+
+/* RESPONSIVO - TABLET */
+@media (max-width: 768px) {
+  .atuacao-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .atuacao-image {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex: 0 0 auto;
+  }
+
+  .atuacao-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .atuacao-text {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .atuacao-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .atuacao-text p {
+    font-size: 0.95rem;
+  }
+
+  .atuacao-button {
+    margin-top: 1.5rem;
+  }
+}
+
+/* RESPONSIVO - CELULAR */
+@media (max-width: 425px) {
+  .atuacao-section {
+    padding: 30px 15px;
+  }
+
+  .atuacao-image img {
+    max-width: 100%;
+  }
+
+  .atuacao-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .atuacao-text p {
+    font-size: 0.9rem;
+  }
+
+  .atuacao-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
