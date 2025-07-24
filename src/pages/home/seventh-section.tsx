@@ -1,7 +1,7 @@
 import "../../styles/seventh-section.css";
 import coletas_exportacao from "../../assets/seventh-section-caminhao.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
-import { Link } from "react-router-dom";
+
 
 export function SeventhSection() {
     return (

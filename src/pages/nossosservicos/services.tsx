@@ -1,7 +1,7 @@
 import "../../styles/styles_nossosServicos/services.css";
 import caminhao from "../../assets/fourth-section-caminhao-estrada.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
-import { Link } from "react-router-dom";
+
 
 export function Services() {
   return (
