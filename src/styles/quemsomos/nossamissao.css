@@ -1,0 +1,128 @@
+:root {
+  --primary: #ffc107;
+  --bg-light: #f7f7f7;
+  --text-dark: #333;
+  --text-muted-dark: rgba(51, 51, 51, 0.8);
+}
+
+.mission-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background: var(--bg-light);
+  overflow: hidden;
+  min-height: 500px;
+  z-index: 10;
+  margin-top: 100px;
+}
+
+/* === LADO ESQUERDO === */
+.mission-left {
+  position: relative;
+  padding: 2rem;
+}
+
+.mission-left .decor-rect {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 80%;
+  height: 80%;
+  z-index: 1;
+}
+
+.mission-left .image-main {
+  position: relative;
+  width: 80%;
+  margin: 4rem 0 0 10%;
+  z-index: 2;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mission-left .image-main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* === LADO DIREITO === */
+.mission-right {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission-right h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.mission-right .section-num {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-right: 0.75rem;
+  line-height: 1;
+}
+
+.mission-right h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--text-muted-dark);
+  margin-left: 1rem;
+}
+
+.mission-right p {
+  color: var(--text-dark);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.btn-contact-dark {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--text-dark);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+  max-width: max-content;
+}
+
+.btn-contact-dark:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsivo básico se quiser adaptar depois */
+@media (max-width: 768px) {
+  .mission-section {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-left .image-main {
+    margin: 2rem auto 0 auto;
+  }
+
+  .mission-right {
+    padding: 2rem 1.5rem;
+  }
+
+  .mission-right h2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mission-right h2::after {
+    display: none;
+  }
+}

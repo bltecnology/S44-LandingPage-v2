@@ -1,0 +1,133 @@
+.benefits-section {
+  background-color: #f3f3f3;
+  padding: 60px 80px;
+}
+
+.benefits-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.benefits-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.benefits-center {
+  flex: 1.5;
+  text-align: center;
+}
+
+.benefits-center h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-center .number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #facc15;
+}
+
+.benefits-center p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-card svg {
+  flex-shrink: 0;
+}
+
+.benefit-card.yellow {
+  background-color: #facc15;
+  color: #000;
+}
+
+.benefit-card.white {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .benefits-section {
+    padding: 40px 2rem;
+  }
+
+  .benefits-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .benefits-column {
+    width: 100%;
+    align-items: center;
+  }
+
+  .benefit-card {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .benefits-center h2 {
+    font-size: 1.6rem;
+  }
+
+  .benefits-center p {
+    font-size: 0.95rem;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 425px) {
+  .benefits-section {
+    padding: 30px 1rem;
+  }
+
+  .benefits-center h2 {
+    font-size: 1.4rem;
+  }
+
+  .benefits-center .number {
+    font-size: 2rem;
+  }
+
+  .benefits-center p {
+    font-size: 0.9rem;
+  }
+
+  .benefit-card {
+    font-size: 0.9rem;
+    padding: 14px 16px;
+    max-width: 100%;
+  }
+}

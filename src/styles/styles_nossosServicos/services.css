@@ -1,0 +1,173 @@
+.transito-section {
+  padding: 4rem 2rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.transito-section h2 {
+  color: #3b3b3b;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.transito-section-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1600px;
+  margin: 7rem auto 0 auto;
+  text-align: left;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.transito-truck-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.transito-text-content {
+  flex: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.transito-highlight-box {
+  display: inline-block;
+  padding: 0.2rem 1.5rem;
+  border: 3px solid #facc15;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: transparent;
+  color: black;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  max-width: 40%;
+  text-align: center;
+}
+
+.transito-description {
+  font-size: 1rem;
+  color: black;
+  max-width: 900px;
+}
+
+.transito-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin-top: 3rem;
+  max-width: max-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.transito-btn:hover {
+  background-color: #facc15;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.transito-triangle-container {
+  position: absolute;
+  top: 220px;
+  left: -1px;
+  z-index: 0;
+}
+
+.transito-triangle-image {
+  width: 300px;
+  height: auto;
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+  .transito-section-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .transito-truck-image {
+    display: none;
+  }
+
+  .transito-triangle-container {
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .transito-triangle-image {
+    width: 350px;
+  }
+
+  .transito-text-content {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .transito-highlight-box {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin: 1rem auto 1.5rem;
+  }
+
+  .transito-btn {
+    font-size: 0.9rem;
+    padding: 0.65rem 1rem;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem auto 0;
+  }
+}
+
+/* CELULARES */
+@media (max-width: 425px) {
+  .transito-triangle-container {
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .transito-triangle-image {
+    width: 300px;
+  }
+
+  .transito-text-content {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .transito-highlight-box {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+  }
+
+  .transito-btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    justify-content: center;
+    margin: 2rem auto 0;
+  }
+}

@@ -20,9 +20,9 @@ export function EighthSection() {
                         seja realizado de forma segura, minimizando riscos e garantindo a segurança das pessoas, da carga e do meio ambiente.
                         Utilizamos equipamentos adequados e motoristas treinados para garantir a excelência no serviço.
                     </p>
-                    <Link to="#" className="eighth-btn">
-                        Solicite nossos serviços ↗
-                    </Link>
+                    <div className="fifth-btn">
+                        <a href="/banner-cargas-perigosas" className="eighth-btn">Solicite nossos serviços ↗</a>
+                    </div>
                 </div>
             </div>
 

@@ -1,0 +1,80 @@
+:root {
+  --primary: #FFC107;
+  --text-dark: #333;
+  --text-light: #fff;
+}
+
+.values {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.values h2 span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-dark);
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.value-card {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  color: var(--text-dark);
+  transition: transform 0.3s;
+  overflow: hidden;
+  text-align: center;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card .value-icon {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.value-card .value-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.value-card .value-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.value-card:hover {
+  background: var(--primary);
+  color: var(--text-light);
+}
+
+.value-card:hover .value-icon,
+.value-card:hover .value-title,
+.value-card:hover .value-description {
+  color: var(--text-light);
+}

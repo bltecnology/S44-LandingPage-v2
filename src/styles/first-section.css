@@ -1,170 +1,172 @@
 section {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    overflow: visible;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  width: 100vw; 
 }
+
 
 .section-container {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    margin-top: -6rem;
-    height: 700px;
-    justify-content: space-between;
-    gap: 2rem;
-    position: relative;
-    z-index: 1;
+  width: 100%; 
+  max-width: unset; 
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.section-container>div:first-child {
-    max-width: 60%;
-    color: #fff;
-    margin-top: -6rem;
-    transform: translateX(-20px);
+
+.section-container > div:first-child {
+  max-width: 60%;
+  color: #fff;
+  margin-top: -6rem;
+  transform: translateX(-20px);
 }
 
 .section-container span {
-    color: #facc15;
-    font-weight: 600;
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  color: #facc15;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .section-container h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .section-container h1 .highlight {
-    color: #FFB906;
-    font-weight: 800;
-    font-size: inherit;
+  color: #FFB906;
+  font-weight: 800;
+  font-size: inherit;
 }
 
 .section-container p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    max-width: 550px;
-    color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 550px;
+  color: #fff;
 }
 
 .section-button {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #facc15;
-    color: #000;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 0.75rem 2rem;
-    border: none;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    min-width: 150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: 150px;
 }
 
 .btn:hover {
-    background-color: #eab308;
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
 .btn-outline-white {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1rem;
-    outline: none !important;
-    box-shadow: none !important;
-    padding: 0.75rem 2rem;
-    border: 1px solid #ffffff;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    gap: 0.5rem;
-    min-width: 180px;
-
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 0.5rem;
+  min-width: 180px;
 }
 
 .btn-outline-white:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
 }
 
+
+.image-wrapper {
+  position: absolute; 
+  right: 20px;  
+  bottom: -50px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+  transform: scale(1.2);
+}
 
 .section-container img {
-    transform: scale(1.6);
-    height: auto;
-    object-fit: contain;
-    margin-right: -4rem;
-    margin-top: -2rem;
-    margin-bottom: -3.5rem;
-    z-index: 2;
-    position: relative;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
 }
 
-
-/* RESPONSIVIDADE PARA AS TELAS  */
+/* RESPONSIVIDADE */
 @media (max-width: 1023px) {
-    .section-container {
-      padding: 1.5rem 1rem;
-      gap: 1.5rem;
-      min-height: 100vh;
-      justify-content: center;
-      margin-left: 3rem;
-      margin-top: -10rem;
-    }
-  
-    .section-container h1 {
-      font-size: 1.4rem;
-      line-height: 1.2;
-    }
-  
-    .section-container p {
-      font-size: 0.8rem;
-      line-height: 1.4;
-    }
-  
-    .section-button {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .section-button .btn,
-    .section-button .btn-outline-white {
-      font-size: 0.75rem;
-      padding: 0.5rem 1rem;
-      width: 90%;
-      gap: 0.5rem;
-    }
-  
-    .section-container img {
-      display: none !important;
-    }
-  
-    .section-container > div:first-child {
-      align-items: center;
-      text-align: center;
-    }
+  .section-container {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    min-height: 100vh;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-top: -10rem;
   }
 
-  
+  .section-container h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .section-container p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .section-button {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-button .btn,
+  .section-button .btn-outline-white {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    width: 90%;
+    gap: 0.5rem;
+  }
+
+  .image-wrapper {
+    display: none !important;
+  }
+
+  .section-container > div:first-child {
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,125 @@
+.certifications-section {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.textLeft,
+.textRight {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.number {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f5b223;
+}
+
+.item p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  max-width: 1700px;
+}
+
+.truckImage {
+  width: 150%;
+  max-width: 1900px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  margin-left: -140px;
+}
+
+/* RESPONSIVO: TABLETS */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 40px;
+  }
+
+  .textLeft,
+  .textRight {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .item {
+    max-width: 45%;
+  }
+
+  .truckImage {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .item p {
+    font-size: 18px;
+  }
+
+  .number {
+    font-size: 22px;
+  }
+}
+
+/* RESPONSIVO: CELULARES */
+@media (max-width: 425px) {
+  .textLeft,
+  .textRight {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .item {
+    max-width: 100%;
+  }
+
+  .item p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .number {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .truckImage {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}

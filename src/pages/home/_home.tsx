@@ -8,6 +8,7 @@ import { SeventhSection } from "./seventh-section";
 import { EighthSection } from "./eighth-section";
 import { NinthSection } from "./ninth-section";
 import { ContactSection } from "./contact-section";
+import { CertificationsSection } from "./certification_section";
 
 
 export function Home() {
@@ -22,6 +23,7 @@ export function Home() {
       <SeventhSection />
       <EighthSection />
       <NinthSection />
+      <CertificationsSection/>
       <ContactSection />
     </div>
   );

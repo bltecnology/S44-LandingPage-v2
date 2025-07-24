@@ -1,6 +1,5 @@
-import banner from "../../assets/first-section-banner.png";
-import caminhao from "../../assets/caminhão fundo amarelo banner.png";
-import { Truck } from "lucide-react";
+import banner from "../../assets/banner_principal.png";
+import caminhao from "../../assets/home_principal.png";
 import "../../styles/first-section.css";
 
 export function FirstSection() {
@@ -10,27 +9,24 @@ export function FirstSection() {
     >
       <div className="section-container">
         <div>
-          <span> A maior transportadora para grandes conquistas!</span>
+          <span>A maior transportadora para grandes conquistas!</span>
           <h1>
             Logística e Transporte <span className="highlight">S44</span>
           </h1>
-          <p>A S44 é uma empresa especializada no transporte de cargas, oferecendo soluções logísticas seguras e eficientes para atender com excelência às demandas do mercado nacional.
+          <p>
+            A S44 é uma empresa especializada no transporte de cargas,
+            oferecendo soluções logísticas seguras e eficientes para atender
+            com excelência às demandas do mercado nacional.
           </p>
           <div className="section-button">
-            <button className="btn">
-              Saiba mais ↗
-            </button >
-            <button className="btn-outline-white">
-              Acesse a plantaforma
-              <Truck size={20} style={{ marginLeft: "0.125rem" }}></Truck>
-            </button>
+            <a href="/contato" className="btn">Saiba mais ↗</a>
           </div>
         </div>
-        <div>
-          <img src={caminhao} alt="Caminhão"></img>
+
+        <div className="image-wrapper">
+          <img src={caminhao} alt="Caminhão" />
         </div>
       </div>
     </section>
-
   );
 }

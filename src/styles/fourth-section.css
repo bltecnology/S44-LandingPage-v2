@@ -149,6 +149,21 @@
 }
 }
 
+.btn-servicos {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: 150px;
+}
+
 @media (max-width: 425px) {
 
   .fourth-section-container {

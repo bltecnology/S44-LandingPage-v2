@@ -1,7 +1,7 @@
 import "../../styles/ninth-section.css";
 import coletas_exportacao from "../../assets/ninth-section-image.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
-import { Link } from "react-router-dom";
+
 
 export function NinthSection() {
     return (
@@ -20,9 +20,9 @@ export function NinthSection() {
                         ideal das mercadorias, evitando perdas, extravios e otimizando o fluxo de entregas. Além disso, a armazenagem
                         própria permite economia com terceiros, maior integração com os serviços de transporte e uma operação mais eficiente do início ao fim.
                     </p>
-                    <Link to="#" className="ninth-btn">
-                        Solicite nossos serviços ↗
-                    </Link>
+                    <div>
+                        <a href="/banner-armazenamento" className="ninth-btn">Solicite nossos serviços ↗</a>
+                    </div>
                 </div>
             </div>
 
