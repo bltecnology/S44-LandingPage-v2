@@ -1,0 +1,115 @@
+:root {
+  --primary: #ffc107;
+  --dark-bg: #2c2c2c;
+  --text-light: #fff;
+  --text-muted: rgba(255, 255, 255, 0.8);
+}
+
+.vision-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--dark-bg);
+  min-height: 520px;
+  position: relative;
+  overflow: visible;
+}
+
+/* === Texto à esquerda === */
+.vision-left {
+  padding: 4rem 3rem;
+  color: var(--text-light);
+  position: relative;
+  z-index: 2;
+}
+
+.bg-number {
+  font-size: 5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.08);
+  position: absolute;
+  top: 0.2rem;
+  left: 3rem;
+  z-index: 1;
+}
+
+.vision-left h2 {
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+
+.vision-left h2 span {
+  color: var(--primary);
+}
+
+.vision-left p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* === Botão claro === */
+.btn-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--text-light);
+  border-radius: 4px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-contact:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* === Imagem à direita === */
+.vision-right {
+  position: relative;
+  transform: scale(1.1);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0;
+  z-index: 1;
+  margin-top: 4.8rem;
+}
+
+.vision-right img {
+  height: 130%;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .vision-section {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-left {
+    padding: 2rem 1.5rem;
+  }
+
+  .bg-number {
+    font-size: 3rem;
+    left: 1.5rem;
+  }
+
+  .vision-right {
+    display: none;
+  }
+}

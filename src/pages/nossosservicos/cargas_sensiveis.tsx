@@ -18,9 +18,9 @@ export function CargasSensiveis() {
                         Cuidamos de itens como produtos eletrônicos, equipamentos médicos, alimentos perecíveis e outros produtos de alto valor ou fragilidade.
                         Garantimos que as mercadorias sejam manuseadas, embaladas e transportadas com o máximo de segurança, evitando danos e assegurando sua integridade durante todo o trajeto.
                     </p>
-                    <Link to="#" className="sensivel-btn">
-                        Saiba mais sobre Transporte de Cargas Sensíveis ↗
-                    </Link>
+                    <div>
+                        <a href="/banner-carga" className="sensivel-btn">Saiba mais sobre Transporte de Cargas Sensíveis ↗</a>
+                    </div>
                 </div>
             </div>
 

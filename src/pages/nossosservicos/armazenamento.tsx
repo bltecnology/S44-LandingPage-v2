@@ -20,9 +20,9 @@ export function Armazenamento() {
                         ideal das mercadorias, evitando perdas, extravios e otimizando o fluxo de entregas. Além disso, a armazenagem
                         própria permite economia com terceiros, maior integração com os serviços de transporte e uma operação mais eficiente do início ao fim.
                     </p>
-                    <Link to="#" className="armazenagem-btn">
-                        Saiba mais sobre Capacidade de Armazenagem ↗
-                    </Link>
+                    <div>
+                        <a href="/banner-armazenamento" className="armazenagem-btn">Saiba mais sobre Capacidade de Armazenagem ↗</a>
+                    </div>
                 </div>
             </div>
 

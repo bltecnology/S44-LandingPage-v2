@@ -1,7 +1,6 @@
 import "../../styles/styles_nossosServicos/cargas_perigosas.css";
 import coletas_exportacao from "../../assets/eighth-section-caminhao.png";
 import trianguloAmarelo from "../../assets/triangulo-amarelo.png";
-import { Link } from "react-router-dom";
 
 export function CargasPerigosas() {
     return (
@@ -20,9 +19,9 @@ export function CargasPerigosas() {
                         seja realizado de forma segura, minimizando riscos e garantindo a segurança das pessoas, da carga e do meio ambiente.
                         Utilizamos equipamentos adequados e motoristas treinados para garantir a excelência no serviço.
                     </p>
-                    <Link to="#" className="perigosa-btn">
-                        Saiba mais sobre Transporte de cargas perigosas ↗
-                    </Link>
+                    <div>
+                        <a href="/banner-cargas-perigosas" className="perigosa-btn">Saiba mais sobre Transporte de cargas perigosas ↗</a>
+                    </div>
                 </div>
             </div>
 
